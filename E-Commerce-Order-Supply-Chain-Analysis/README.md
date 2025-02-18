@@ -12,7 +12,7 @@ There are a wide variety of products found in this dataset ranging from home dec
 ## How to use this Repository
 This Repository contains SQL queries analyzing the E-Commerce Orders and Supply Chain Data. The queries are organized into folders based on their focus area.
 
-Click on each link to see the queries
+### Click on each link to see the queries.
 
 ### Repository Structure & Queries
 #### Sales Performance Analysis Queries:
