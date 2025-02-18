@@ -53,6 +53,13 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **Top-Spending Customers:** The dataset consists of unique `customer_id`'s per transaction, meaning it is hard to track repeating customers. But in each transaction, customers are capable of *bulk-buying*. As the top-spender in the dataset bought 31 units of a product that is priced R$231.8 (Price + Shipping Fee) summing up into R$7274.88.
 - **Regional Spending Trends:** Top-spending regions were `Sao Paulo`, `Rio de Janeiro`, `Belo Horizonte`, `Brasilia` all indicate a dense customer base having significant purchasing power.
 - **Payment Preferences:** *Credit Card* payment methods are the top choice, accounting forthe highest order volume indicating that customers prefer the convenience and security associated with credit cards followed by *Digital Wallets*, highlighting a growing trend in digital payment methods, suggesting customers are likely looking for faster and a more seamless way to pay online.
+
+![count of orders](plots/count_of_orders.png)
+
+![avg payment_value](plots/avg_payment_value.png)
+
+![total payment_value](plots/total_payment_value.png)
+
 - **Behavioral Patterns of Customers:** In this analysis, we found out that customers tend to purchase online in a certain time of the day, where mostly the peak hour when customers do order is at 2:00 PM. Generally in the Afternoon mostly.
 
 ### 3. Order Fullfilment Efficiency
