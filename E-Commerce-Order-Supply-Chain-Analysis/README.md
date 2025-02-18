@@ -13,8 +13,8 @@ There are a wide variety of products found in this dataset ranging from home dec
 This Repository contains SQL queries analyzing the E-Commerce Orders and Supply Chain Data. The queries are organized into folders based on their focus area.
 
 ### Reporsitory Structure & Queries
-#### Customer Behavior Queries
-https://raw.githubusercontent.com/cartiace0004/Portfolio/refs/heads/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql
+#### Sales Performance Analysis Queries:
+- **[Total Revenue & Number of Orders](https://raw.githubusercontent.com/cartiace0004/Portfolio/refs/heads/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)**
 
 ## Key Insights
 
