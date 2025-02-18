@@ -56,8 +56,6 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 ![count of orders](plots/count_of_orders.png)
 
-![avg payment_value](plots/avg_payment_value.png)
-
 ![total payment_value](plots/total_payment_value.png)
 
 - **Behavioral Patterns of Customers:** In this analysis, we found out that customers tend to purchase online in a certain time of the day, where mostly the peak hour when customers do order is at 2:00 PM. Generally in the Afternoon mostly.
