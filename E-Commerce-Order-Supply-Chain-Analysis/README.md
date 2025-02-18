@@ -14,7 +14,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 ### Reporsitory Structure & Queries
 #### Sales Performance Analysis Queries:
-- **[Total Revenue & Number of Orders](https://raw.githubusercontent.com/cartiace0004/Portfolio/refs/heads/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql))**
+- **[Total Revenue & Number of Orders](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)**
 
 ## Key Insights
 
