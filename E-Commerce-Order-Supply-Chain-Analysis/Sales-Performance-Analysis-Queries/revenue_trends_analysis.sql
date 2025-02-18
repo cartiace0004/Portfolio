@@ -19,5 +19,5 @@ FROM orders o
 JOIN payments p ON o.order_id = p.order_id
 WHERE o.order_status = 'delivered'
 GROUP BY month
-HAVING month != '2016-12'  #Excluding December 2016
+HAVING month != '2016-12'  -- Excluding December 2016
 ORDER BY month;
