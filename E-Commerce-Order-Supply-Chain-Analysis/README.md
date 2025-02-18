@@ -9,6 +9,13 @@ There are a wide variety of products found in this dataset ranging from home dec
 - **Customer Behavior:** Understanding how customers behave in terms of sales whether if its dependent on the region they belong, their payment preferences, and the amount they spend on a single transaction.
 - **Order Fulfillment Efficiency:** Investigating early vs. late deliveries and identifying regions with the most consistent delays.
 
+## How to use this Repository
+This Repository contains SQL queries analyzing the E-Commerce Orders and Supply Chain Data. The queries are organized into folders based on their focus area.
+
+### Reporsitory Structure & Queries
+#### Customer Behavior Queries
+https://raw.githubusercontent.com/cartiace0004/Portfolio/refs/heads/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql
+
 ## Key Insights
 
 ### 1. Sales Performance
@@ -42,5 +49,3 @@ There are a wide variety of products found in this dataset ranging from home dec
 - **SQL**: Data Manipulation, aggregation, and analysis.
 - **Python**: Data analysis and visualization using Pandas, Matplotlib and Seaborn.
 - **MySQL Workbench**: Database management and query execution.
-
-## Project Structure
