@@ -24,3 +24,16 @@ There are a wide variety of products found in this dataset ranging from home dec
 - **Regional Spending Trends:** Top-spending regions were Sao Paulo, Rio de Janeiro, Belo Horizonte, Brazilia all indicate a dense customer base having significant purchasing power.
 - **Payment Preferences:** *Credit Card* payment methods are the top choice, accounting forthe highest order volume indicating that customers prefer the convenience and security associated with credit cards followed by *Digital Wallets*, highlighting a growing trend in digital payment methods, suggesting customers are likely looking for faster and a more seamless way to pay online.
 - **Behavioral Patterns of Customers:** In this analysis, we found out that customers tend to purchase online in a certain time of the day, where mostly the peak hour when customers do order is at 2:00 PM. Generally in the Afternoon mostly.
+
+### 3. Order Fullfilment Efficiency
+- **Delivery Accuracy Assessment:** We encountered problems with this section of our analysis as `Outliers` were skewing our results. Nevertheless, with a little Data Cleaning, we managed to pull-through and contain the issue. In this section, we discovered that the logistics company handle their `estimated delivery dates` too conservatively as most of the results are early deliveries.
+- **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive 93.22%, while their on time percentage is 1.32% and late percentage is 5.46%.
+- **Identify the worst-affected Regions for Late deliveries:** Alagoas (AL) tops the list with an 18.21% late delivery rate, followed by Maranhao (MA) with 16.55%. Suggesting certain regional logistics challenges in the Northeast region of Brazil.
+
+## Business Recommendations:
+- **Leverage Seasonal Campaigns:** Offering discounts and targeted promotions to maximize revenue in future holiday/season events.
+- **Improve Revenue Growth Beyond Order Volume:** Upselling & Cross-Selling: Bundle products, introduce premium options. Also encourage repeat purchases with discounts for high-spenders and bulk-buyers.
+- **Improve Delivery Estimates:** Investigate late delivereis, especially in specific regions to address supply chain inefficiencies and enhance customer experience. Also, refining the estimated delivery times by reducing the gap between estimated and actual delivery can improve customer trust.
+- **Optimize Payment Methods:** Promote *wallet* and *credit card* payment methods by offering incentives, as these methods have higher average transaction values. Also encouragement of *debit card* usage such as offering cashback on high-ticket purchases made through debit cards or running targeted promotions as this payment method is underused most of the time. 
+- **Regional Distribution Centers:** Establish or enhance fulfillment hubs closer to locations with high late-delivery percentages as this could strengthen customer trust leading to repeated purchases.
+- **Carrier & Infrastructure Audit:** Consider *multi-carrier strategies* for remote areas. 
