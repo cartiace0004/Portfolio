@@ -28,6 +28,11 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **[Payment Preferences](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/payment_preferences.sql)**
 - **[Customer Behavioral Patterns](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/customer_behavioral_patterns.sql)**
 
+#### Order Fulfillment Analysis:
+- **[Delivery Accuracy Assessment](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Order-Fulfillment-Efficiencies-Queries/delivery_accuracy_assessment.sql)**
+- **[Measure Early vs. Late Deliveries](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Order-Fulfillment-Efficiencies-Queries/measure_early_vs_late_deliveries.sql)**
+- **[Identifying the Worst-Affected Regions in Late Deliveries](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Order-Fulfillment-Efficiencies-Queries/identify_the_worst_affected_regions_for_late_deliveries.sql)**
+
 ## Key Insights
 
 ### 1. Sales Performance
