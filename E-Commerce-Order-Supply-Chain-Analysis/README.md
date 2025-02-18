@@ -22,6 +22,12 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **[Average Order Value](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/average-order-value.sql)**
 - **[Sales Seasonality Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/sales-seasonality-analysis.sql)**
 
+#### Customer Behavior Analaysis:
+- **[Top-Spending Customers](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/top_spender_customer.sql)**
+- **[Regional Spending Trends](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/regional_spending_trends.sql)**
+- **[Payment Preferences](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/payment_preferences.sql)**
+- **[Customer Behavioral Patterns](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/customer_behavioral_patterns.sql)**
+
 ## Key Insights
 
 ### 1. Sales Performance
