@@ -43,6 +43,11 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 ![Top Product: Revenue](plots/top_prod_revenue.png)
 
 - **Top-Selling Product Categories:** `Toys` dominate in total revenue, followed by `Furniture Decorations` then `Garden Tools`. This could mean that the logistics company has a good reputation for handling and delivering large items safely from hubs to their respective buyers.
+
+![Top Product Category: Orders](plots/top_prod_cat_orders.png)
+
+![Top Product Category: Revenue](plots/top_prod_cat_revenue.png)
+
 - **Analyzing Revenue Trends Overtime:** Revenue trends are greatly affected by seasons, holiday-promotion sales and market saturation.
 - **Month-over-month Growth:** Ups and downs in terms of revenue growth, having a strong early start in the 1st quarter of 2017 followed by a Revenue spike mid to late 2017, stability in Q1 2018, then steady decline in Q2-Q3 of 2018 implying market saturation.
 - **Average Order Value (AOV):** Relatively stable, peaks align with high-sale months such as November's infamous `Black Friday Sale`.
