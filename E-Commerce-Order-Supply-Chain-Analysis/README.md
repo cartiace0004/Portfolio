@@ -16,6 +16,11 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 #### Sales Performance Analysis Queries (Click on each link to see the queries):
 - **[Total Revenue & Number of Orders](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)**
 - **[Top-Selling Products](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/top_selling_products.sql)**
+- **[Top Product Categories](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/top_product_categories.sql)**
+- **[Revenue Trends Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/revenue_trends_analysis.sql)**
+- **[Month-over-month Growth Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/month-over-month-growth.sql)**
+- **[Average Order Value](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/average-order-value.sql)**
+- **[Sales Seasonality Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/sales-seasonality-analysis.sql)**
 
 ## Key Insights
 
