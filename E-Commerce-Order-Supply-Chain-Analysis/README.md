@@ -62,7 +62,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 ![order_freq_reg](plots/order_freq_reg.png)
 
-We also discovered the peak hours for customers to purchase throughout the day. The busiest are around the afternoon, specifically 2:00 PM.
+We also discovered the peak hours for customers to purchase throughout the day. The busiest are around the afternoon, specifically at `2:00 PM`.
 
 ![peak_hour_orders](plots/peak_hour_plot.png)
 
