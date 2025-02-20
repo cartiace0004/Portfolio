@@ -14,7 +14,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 ### Repository Structure & Queries
 #### Sales Performance Analysis Queries:
-- **[Total Revenue & Number of Orders](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)** : calculated the total orders by using the COUNT aggregation to count the number of orders and applying the DISTINCT keyword to only return unique rows, no duplicates. Then used the addition operation on the price and shipping charges columns to get the total value of the product, then aggregating with the SUM function to get the total of every product order.
+- **[Total Revenue & Number of Orders](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)**
 - **[Top-Selling Products](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/top_selling_products.sql)**
 - **[Top Product Categories](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/top_product_categories.sql)**
 - **[Revenue Trends Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/revenue_trends_analysis.sql)**
@@ -58,7 +58,13 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 ![total payment_value](plots/total_payment_value.png)
 
-- **Behavioral Patterns of Customers:** In this analysis, we found out that customers tend to purchase online in a certain time of the day, where mostly the peak hour when customers do order is at 2:00 PM. Generally in the Afternoon mostly.
+- **Behavioral Patterns of Customers:** This section uncovered customer's behavior patterns and the order volume per region. Firstly, we uncovered the order frequency of each regions. This returns which regions has the highest volume of purchases and these were the states of `Sao Paulo`, `Rio de Janeiro`, and `Minas Gerais`. This correlates to the fact that these are the top 3 most populated states in Brazil, meaning these regions have the densest customer bases.
+
+![order_freq_reg](plots/order_freq_reg.png)
+
+We also discovered the peak hours for customers to purchase throughout the day. The busiest are around the afternoon, specifically 2:00 PM.
+
+![peak_hour_orders](plots/peak_hour_plot.png)
 
 ### 3. Order Fullfilment Efficiency
 - **Delivery Accuracy Assessment:** We encountered problems with this section of our analysis as `Outliers` were skewing our results. Nevertheless, with a little Data Cleaning, we managed to pull-through and contain the issue. In this section, we discovered that the logistics company handle their `estimated delivery dates` too conservatively as most of the results are early deliveries.
