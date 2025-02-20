@@ -1,5 +1,5 @@
 # E-Commerce Order and Supply Chain Exploratory Data Analysis
-This project analyzes e-commerce orders and payment data to uncover and provide insights on sales performance, customer behavior and order fulfillments.
+This project analyzes E-commerce orders and payment data to uncover and provide insights on sales performance, customer behavior and order fulfillments.
 
 ## Project Overview
 
@@ -14,7 +14,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 ### Repository Structure & Queries
 #### Sales Performance Analysis Queries:
-- **[Total Revenue & Number of Orders](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)**
+- **[Total Revenue & Number of Orders](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/total_revenue.sql)** : calculated the total orders by using the COUNT aggregation to count the number of orders and applying the DISTINCT keyword to only return unique rows, no duplicates. Then used the addition operation on the price and shipping charges columns to get the total value of the product, then aggregating with the SUM function to get the total of every product order.
 - **[Top-Selling Products](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/top_selling_products.sql)**
 - **[Top Product Categories](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/top_product_categories.sql)**
 - **[Revenue Trends Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/revenue_trends_analysis.sql)**
@@ -22,7 +22,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **[Average Order Value](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/average-order-value.sql)**
 - **[Sales Seasonality Analysis](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Sales-Performance-Analysis-Queries/sales-seasonality-analysis.sql)**
 
-#### Customer Behavior Analaysis:
+#### Customer Behavior Analysis:
 - **[Top-Spending Customers](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/top_spender_customer.sql)**
 - **[Regional Spending Trends](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/regional_spending_trends.sql)**
 - **[Payment Preferences](https://github.com/cartiace0004/Portfolio/blob/main/E-Commerce-Order-Supply-Chain-Analysis/Customer-Behavior-Queries/payment_preferences.sql)**
