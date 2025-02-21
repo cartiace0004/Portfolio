@@ -90,7 +90,7 @@ This is how the dataset looked like after Data Cleaning (*see Figure 1.8*):
 *Figure 1.8: Avg Early vs Late Deliveries after Data Cleaning*
 
 
-- **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive 93.22%, while their on time percentage is 1.32% and late percentage is 5.46%.
+- **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive `93.22%`, while their on time percentage is `1.32%` and late percentage is `5.46%`.
 - **Identify the worst-affected Regions for Late deliveries:** `Alagoas (AL)` tops the list with an 18.21% late delivery rate, followed by `Maranhao (MA)` with 16.55%. Suggesting certain regional logistics challenges in the Northeast region of Brazil.
 
 ## Business Recommendations:
