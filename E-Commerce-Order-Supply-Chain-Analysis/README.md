@@ -9,7 +9,8 @@ There are a wide variety of products found in this dataset ranging from home dec
 - **Customer Behavior:** Understanding how customers behave in terms of sales whether if its dependent on the region they belong, their payment preferences, and the amount they spend on a single transaction.
 - **Order Fulfillment Efficiency:** Investigating early vs. late deliveries and identifying regions with the most consistent delays.
 
-### **Dataset link**: https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset
+### Dataset link: 
+- **https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset**
 
 ## How to use this Repository
 This Repository contains SQL queries analyzing the E-Commerce Orders and Supply Chain Data. The queries are organized into folders based on their focus area. **Click on each link to see the queries!**
