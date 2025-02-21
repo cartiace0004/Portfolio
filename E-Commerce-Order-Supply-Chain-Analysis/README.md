@@ -45,10 +45,12 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **Top-Selling Products:** the top 5 best selling products are mostly from the `Toys` category with a small niche of profitable market for `Garden Tools` being the only product that is a non-toy.
 
 ![Top Product: Revenue](plots/top_prod_revenue.png)
+Figure 1.1: Top Products
 
 - **Top-Selling Product Categories:** `Toys` dominate in total revenue, followed by `Furniture Decorations` then `Garden Tools`. This could mean that the logistics company has a good reputation for handling and delivering large items safely from hubs to their respective buyers.
 
 ![Top Product Category: Revenue](plots/top_prod_cat_revenue.png)
+Figure 1.2: Top Categories
 
 - **Analyzing Revenue Trends Overtime:** Revenue trends are greatly affected by seasons, holiday-promotion sales and market saturation.
 - **Month-over-month Growth:** Ups and downs in terms of revenue growth, having a strong early start in the 1st quarter of 2017 followed by a Revenue spike mid to late 2017, stability in Q1 2018, then steady decline in Q2-Q3 of 2018 implying market saturation.
@@ -61,21 +63,26 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **Payment Preferences:** `Credit Card` payment methods are the top choice, accounting forthe highest order volume indicating that customers prefer the convenience and security associated with credit cards followed by `Digital Wallets`, highlighting a growing trend in digital payment methods, suggesting customers are likely looking for faster and a more seamless way to pay online.
 
 ![count of orders](plots/count_of_orders.png)
+Figure 1.3: Count of Orders
 
 ![total payment_value](plots/total_payment_value.png)
+Figure 1.4: Total Payment Value
 
 - **Behavioral Patterns of Customers:** This section uncovered customer's behavior patterns and the order volume per region. Firstly, we uncovered the order frequency of each regions. This returns which regions has the highest volume of purchases and these were the states of `Sao Paulo`, `Rio de Janeiro`, and `Minas Gerais`. This correlates to the fact that these are the top 3 most populated states in Brazil, meaning these regions have the densest customer bases.
 
 ![order_freq_reg](plots/order_freq_reg.png)
+Figure 1.5: Order Frequency Per Region
 
 We also uncovered every customer's preferred hour of purchase throughout the day. The busiest are in the afternoons, specifically at `2:00 PM`/`14th hour of the day`.
 
 ![peak_hour_orders](plots/peak_hour_plot.png)
+Figure 1.6: Customer Peak Hours
 
 ### 3. Order Fullfilment Efficiency
 - **Delivery Accuracy Assessment:** We encountered problems with this section of our analysis as `Outliers` were skewing our results. We did a little Data Cleaning in order to exempt these Outliers by first finding the optimal range where the deviation of estimated delivery and actual delivery days are on par to real-time records. In order to achieve this, we filtered out these extreme cases of Outliers beyond 3 standard deviations. We used `3` so that we could *encapsulate all rows that have reasonable values*, leaving the extreme cases outside the normal distribution, thus returning only the values that have reasonable records. Also in this section, we discovered that the logistics company handle their `estimated delivery dates` too conservatively as most of the results are early deliveries.
 
 ![outlier_table](plots/outliers.png)
+Figure 1.7: Avg Early vs Late Deliveries with Outliers
 
 - **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive 93.22%, while their on time percentage is 1.32% and late percentage is 5.46%.
 - **Identify the worst-affected Regions for Late deliveries:** `Alagoas (AL)` tops the list with an 18.21% late delivery rate, followed by `Maranhao (MA)` with 16.55%. Suggesting certain regional logistics challenges in the Northeast region of Brazil.
