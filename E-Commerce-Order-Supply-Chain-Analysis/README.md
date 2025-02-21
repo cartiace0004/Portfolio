@@ -3,8 +3,9 @@ This project analyzes E-commerce orders and payment data to uncover and provide 
 
 ## Project Overview
 
-The dataset used was from kaggle called `Ecommerce Order & Supply Chain` focusing on a logistics company based in Brazil. This consists of information about customer orders, payment method, product details, and delivery timestamps. The dataset is flawed, however, with missing row values and dates ranging only from Q4 2016 - Q3 2018.
-There are a wide variety of products found in this dataset ranging from home decors, personal necessities, to toys. This analysis focuses on:
+The dataset used was from Kaggle called `Ecommerce Order & Supply Chain` focusing on a logistics company based in Brazil. This consists of information about customer orders, payment method, product details, and delivery timestamps. The dataset is flawed, however, with missing row values and dates ranging only from Q4 2016 - Q3 2018.
+There are a wide variety of products found in this dataset ranging from home decors to toys.
+This analysis focuses on:
 - **Sales Performance:** Examining the total sales, top-selling products, analyzing revenue trends over time, month-over-month revenue growths, the average order values per month, and sales seasonality analysis.
 - **Customer Behavior:** Understanding how customers behave in terms of sales whether if its dependent on the region they belong, their payment preferences, and the amount they spend on a single transaction.
 - **Order Fulfillment Efficiency:** Investigating early vs. late deliveries and identifying regions with the most consistent delays.
