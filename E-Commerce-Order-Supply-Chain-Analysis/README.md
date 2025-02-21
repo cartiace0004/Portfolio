@@ -4,7 +4,7 @@ This project analyzes E-Commerce orders and payment data to uncover and provide 
 ## Project Overview
 
 ### Dataset Used
-The dataset used was from a website called **Kaggle** called `Ecommerce Order & Supply Chain` focusing on a logistics company based in Brazil. This consists of information about customer orders, payment method, product details, and delivery timestamps. The dataset is flawed, however, with missing row values on certain tables and dates ranging only from `Q4 2016` - `Q3 2018` but despite the flaws, we still managed to work around it with `Optimization Queries` and `Data Cleaning` without interfering our objectives for this project. There are a wide variety of products found in this dataset ranging from home decors to toys.
+The dataset used was from a website called **Kaggle** called `Ecommerce Order & Supply Chain` focusing on a logistics company based in Brazil. This consists of information about customer orders, payment method, product details, and delivery timestamps. A wide variety of products are found in this dataset ranging from home decors to toys. The dataset is flawed, however, with missing row values on certain tables and dates ranging only from `Q4 2016` - `Q3 2018` but despite the flaws, we still managed to work around it with `Optimization Queries` and `Data Cleaning` without interfering our objectives for this project.
 
 ### Dataset Link: 
 - **https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset**
