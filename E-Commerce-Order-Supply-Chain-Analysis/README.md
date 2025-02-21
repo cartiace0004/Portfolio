@@ -84,6 +84,12 @@ We also uncovered every customer's preferred hour of purchase throughout the day
 ![outlier_table](plots/outliers.png)
 *Figure 1.7: Avg Early vs Late Deliveries with Outliers*
 
+This is how the dataset looked like after Data Cleaning: Outliers Removed:
+
+![outlers_removed](plots/outliers_removed.png)
+*Figure 1.8: Avg Early vs Late Deliveries after Data Cleaning*
+
+
 - **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive 93.22%, while their on time percentage is 1.32% and late percentage is 5.46%.
 - **Identify the worst-affected Regions for Late deliveries:** `Alagoas (AL)` tops the list with an 18.21% late delivery rate, followed by `Maranhao (MA)` with 16.55%. Suggesting certain regional logistics challenges in the Northeast region of Brazil.
 
