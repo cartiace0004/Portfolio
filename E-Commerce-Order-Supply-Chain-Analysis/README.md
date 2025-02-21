@@ -75,7 +75,7 @@ We also uncovered every customer's preferred hour of purchase throughout the day
 ### 3. Order Fullfilment Efficiency
 - **Delivery Accuracy Assessment:** We encountered problems with this section of our analysis as `Outliers` were skewing our results. Nevertheless, with a little Data Cleaning, we managed to pull-through and contain the issue. In this section, we discovered that the logistics company handle their `estimated delivery dates` too conservatively as most of the results are early deliveries.
 - **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive 93.22%, while their on time percentage is 1.32% and late percentage is 5.46%.
-- **Identify the worst-affected Regions for Late deliveries:** Alagoas (AL) tops the list with an 18.21% late delivery rate, followed by Maranhao (MA) with 16.55%. Suggesting certain regional logistics challenges in the Northeast region of Brazil.
+- **Identify the worst-affected Regions for Late deliveries:** `Alagoas (AL)` tops the list with an 18.21% late delivery rate, followed by `Maranhao (MA)` with 16.55%. Suggesting certain regional logistics challenges in the Northeast region of Brazil.
 
 ## Business Recommendations:
 - **Leverage Seasonal Campaigns:** Offering discounts and targeted promotions to maximize revenue in future holiday/season events.
