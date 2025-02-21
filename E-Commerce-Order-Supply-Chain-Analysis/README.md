@@ -45,12 +45,12 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 - **Top-Selling Products:** the top 5 best selling products are mostly from the `Toys` category with a small niche of profitable market for `Garden Tools` being the only product that is a non-toy.
 
 ![Top Product: Revenue](plots/top_prod_revenue.png)
-Figure 1.1: Top Products
+*Figure 1.1: Top Products*
 
 - **Top-Selling Product Categories:** `Toys` dominate in total revenue, followed by `Furniture Decorations` then `Garden Tools`. This could mean that the logistics company has a good reputation for handling and delivering large items safely from hubs to their respective buyers.
 
 ![Top Product Category: Revenue](plots/top_prod_cat_revenue.png)
-Figure 1.2: Top Categories
+*Figure 1.2: Top Categories*
 
 - **Analyzing Revenue Trends Overtime:** Revenue trends are greatly affected by seasons, holiday-promotion sales and market saturation.
 - **Month-over-month Growth:** Ups and downs in terms of revenue growth, having a strong early start in the 1st quarter of 2017 followed by a Revenue spike mid to late 2017, stability in Q1 2018, then steady decline in Q2-Q3 of 2018 implying market saturation.
