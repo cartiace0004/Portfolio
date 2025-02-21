@@ -1,5 +1,5 @@
 # E-Commerce Order and Supply Chain Exploratory Data Analysis
-This project analyzes E-commerce orders and payment data to uncover and provide insights on sales performance, customer behavior and order fulfillments.
+This project analyzes E-Commerce orders and payment data to uncover and provide insights on **sales performance**, **customer behavior** and **order fulfillments**.
 
 ## Project Overview
 
