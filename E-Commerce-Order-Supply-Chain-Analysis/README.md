@@ -11,8 +11,8 @@ The dataset used was from Kaggle called `Ecommerce Order & Supply Chain` focusin
 
 ### Objective
 Our main objectives and goals for this Project are:
-- **Sales Performance:** Examining the total sales, top-selling products, analyzing revenue trends over time, month-over-month revenue growths, the average order values per month, and sales seasonality analysis.
-- **Customer Behavior:** Understanding how customers behave in terms of sales whether if its dependent on the region they belong, their payment preferences, and the amount they spend on a single transaction.
+- **Sales Performance Analysis:** Examining the total sales, top-selling products, analyzing revenue trends over time, month-over-month revenue growths, the average order values per month, and sales seasonality analysis.
+- **Customer Behavior Analysis:** Understanding how customers behave in terms of sales whether if its dependent on the region they belong, their payment preferences, and the amount they spend on a single transaction.
 - **Order Fulfillment Efficiency:** Investigating early vs. late deliveries and identifying regions with the most consistent delays.
 
 ## How to use this Repository
