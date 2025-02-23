@@ -94,6 +94,8 @@ This is how the dataset looked like after Data Cleaning (*see Figure 1.8*):
 
 ![early_vs_late](plots/early_vs_late.png)
 *Figure 1.9: Early vs On Time vs Late Delivery Percentages*
+
+
 - **Identify the worst-affected Regions for Late deliveries:** **Alagoas (AL)** tops the list with an `18.21%` late delivery rate, followed by **Maranhao (MA)** with `16.55%`. Suggesting certain regional logistics challenges in the Northeast region of Brazil
 
 ![worst_affected](plots/worst_affected.png)
