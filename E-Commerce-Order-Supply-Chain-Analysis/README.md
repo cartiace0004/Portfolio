@@ -69,49 +69,55 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 - **Sales Seasonality Analysis:** Steady rise in `AOV` suggests customers are spending slightly more per transaction, but revenue growth is still mainly *volume-driven*. The highest-grossing quarter was Q1 2018, telling us seasonal trends and holiday-promotion sales are a big factor.
 
+![seasonal_aov](plots/seasonal_anal3.png)
+*Figure 1.6: Seasonal Analysis (AOV)*
+
+![seasonal_to](plots/seasonal_anal4.png)
+*Figure 1.7: Seasonal Analysis (Total Orders)*
+
 ### 2. Customer Behavior
 - **Top-Spending Customers:** The dataset consists of unique `customer_id`'s per transaction, meaning it is hard to track repeating customers. But in each transaction, customers are capable of *bulk-buying*. As the top-spender in the dataset bought 31 units of a product that is priced `R$231.8` (Price + Shipping Fee) summing up into `R$7274.88`.
 - **Regional Spending Trends:** Top-spending regions were `Sao Paulo`, `Rio de Janeiro`, `Belo Horizonte`, `Brasilia` all indicate a dense customer base having significant purchasing power.
 - **Payment Preferences:** `Credit Card` payment methods are the top choice, accounting forthe highest order volume indicating that customers prefer the convenience and security associated with credit cards followed by `Digital Wallets`, highlighting a growing trend in digital payment methods, suggesting customers are likely looking for faster and a more seamless way to pay online.
 
 ![count of orders](plots/count_of_orders.png)
-*Figure 1.6: Count of Orders*
+*Figure 1.8: Count of Orders*
 
 ![total payment_value](plots/total_payment_value.png)
-*Figure 1.7: Total Payment Value*
+*Figure 1.9: Total Payment Value*
 
 - **Behavioral Patterns of Customers:** This section uncovered customer's behavior patterns and the order volume per region. Firstly, we uncovered the order frequency of each regions. This returns which regions has the highest volume of purchases and these were the states of `Sao Paulo`, `Rio de Janeiro`, and `Minas Gerais`. This correlates to the fact that these are the top 3 most populated states in Brazil, meaning these regions have the densest customer bases.
 
 ![order_freq_reg](plots/order_freq_reg.png)
-*Figure 1.8: Order Frequency Per Region*
+*Figure 2.0: Order Frequency Per Region*
 
 We also uncovered every customer's preferred hour of purchase throughout the day. The busiest are in the afternoons, specifically at `2:00 PM`/`14th hour of the day`.
 
 ![peak_hour_orders](plots/peak_hour_plot.png)
-*Figure 1.9: Customer Peak Hours*
+*Figure 2.1: Customer Peak Hours*
 
 ### 3. Order Fullfilment Efficiency
 - **Delivery Accuracy Assessment:** We encountered problems with this section of our analysis as `Outliers` were skewing our results. We did a little Data Cleaning in order to exempt these Outliers by first finding the optimal range where the deviation of estimated delivery and actual delivery days are on par to real-time records. In order to achieve this, we filtered out these extreme cases of Outliers beyond 3 standard deviations. We used `3` so that we could *encapsulate all rows that have reasonable values within the bell curve/normal distribution*, leaving the extreme cases outside the normal distribution, thus returning only the values that have reasonable records. Also in this section, we discovered that the logistics company handle their `estimated delivery dates` too conservatively or overestimate their `estimated delivery dates` as most of the results are early deliveries.
 
 ![outlier_table](plots/outliers.png)
-*Figure 2.0: Avg Early vs Late Deliveries with Outliers*
+*Figure 2.2: Avg Early vs Late Deliveries with Outliers*
 
 This is how the dataset looked like after Data Cleaning (*see Figure 1.8*):
 
 ![outlers_removed](plots/outliers_removed.png)
-*Figure 2.1: Avg Early vs Late Deliveries after Data Cleaning*
+*Figure 2.3: Avg Early vs Late Deliveries after Data Cleaning*
 
 
 - **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive `93.22%`, while their on time percentage is `1.32%` and late percentage is `5.46%`.
 
 ![early_vs_late](plots/ealy_vs_late.png)
-*Figure 2.2: Early vs On Time vs Late Delivery Percentages*
+*Figure 2.4: Early vs On Time vs Late Delivery Percentages*
 
 
 - **Identify the worst-affected Regions for Late deliveries:** **Alagoas (AL)** tops the list with an `18.21%` late delivery rate, followed by **Maranhao (MA)** with `16.55%`. Suggesting certain regional logistics challenges in the Northeast region of Brazil
 
 ![worst_affected](plots/worst_affected.png)
-*Figure 2.3: Worst Affected Regions in Late Percentages*
+*Figure 2.5: Worst Affected Regions in Late Percentages*
 
 ## Business Recommendations:
 - **Leverage Seasonal Campaigns:** Offering discounts and targeted promotions to maximize revenue in future holiday/season events.
