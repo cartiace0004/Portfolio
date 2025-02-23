@@ -62,7 +62,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 ![mom_growth](plots/mom_growth.png)
 *Figure 1.4: Month over month Growth Percentage*
 
-- **Average Order Value (AOV):** Relatively stable, noticable steady growth on average order values.
+- **Average Order Value (AOV):** Relatively stable. Also indicates that AOV does not correlate to the growth of Revenue.
 
 ![avg_order](plots/avg_order_value.png)
 *Figure 1.5: Average Order Value*
