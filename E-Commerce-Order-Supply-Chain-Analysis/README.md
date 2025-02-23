@@ -69,7 +69,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 
 - **Sales Seasonality Analysis:** Steady rise in `AOV` suggests customers are spending slightly more per transaction, but revenue growth is still mainly *volume-driven*. The highest-grossing quarter was Q1 2018, telling us seasonal trends and holiday-promotion sales are a big factor.
 
-![seasonal_aov](plots/seasonal_anal3.png)
+![seasonal_aov](plots/seasonal_anal5.png)
 *Figure 1.6: Seasonal Analysis (AOV)*
 
 ![seasonal_to](plots/seasonal_anal4.png)
