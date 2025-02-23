@@ -62,7 +62,7 @@ This Repository contains SQL queries analyzing the E-Commerce Orders and Supply 
 ![mom_growth](plots/mom_growth.png)
 *Figure 1.4: Month over month Growth Percentage*
 
-- **Average Order Value (AOV):** Relatively stable, noticable steady growth on average order values by customers and peaks align with high-sale and holiday months such as November's infamous `Black Friday Sale` and `New Years Day`.
+- **Average Order Value (AOV):** Relatively stable, noticable steady growth on average order values. This indicates that Customers are spending more per transaction which correlates to a rise in revnue without increasing the number of orders.
 
 ![avg_order](plots/avg_order_value.png)
 *Figure 1.5: Average Order Value*
