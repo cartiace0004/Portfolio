@@ -92,7 +92,7 @@ This is how the dataset looked like after Data Cleaning (*see Figure 1.8*):
 
 - **Measure Early vs. Late Deliveries:** The early delivery percentage of every orders fulfilled by the company have a massive `93.22%`, while their on time percentage is `1.32%` and late percentage is `5.46%`.
 
-![early_vs_late](plots/early_vs_late.png)
+![early_vs_late](plots/ealy_vs_late.png)
 *Figure 1.9: Early vs On Time vs Late Delivery Percentages*
 
 
