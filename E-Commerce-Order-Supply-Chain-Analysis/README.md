@@ -99,7 +99,7 @@ We also uncovered every customer's preferred hour of purchase throughout the day
 ![outlier_table](plots/outliers.png)
 *Figure 2.1: Avg Early vs Late Deliveries with Outliers*
 
-This is how the dataset looked like after Data Cleaning (*see Figure 2.1*):
+This is how the dataset looked like after Data Cleaning (*see Figure 2.2*):
 
 ![outlers_removed](plots/outliers_removed.png)
 *Figure 2.2: Avg Early vs Late Deliveries after Data Cleaning*
