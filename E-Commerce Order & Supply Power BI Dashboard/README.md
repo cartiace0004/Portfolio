@@ -4,4 +4,5 @@ In this Portfolio Project, I visualized my findings on my E-Commerce Order & Sup
 ## Content
 The Dashboard contains 4 Pages and 2 Tooltips
 
-### Sales 
+### Sales Performance Analysis Dashboard
+![Sales Performance](Dashboards/sales_performance.png)
