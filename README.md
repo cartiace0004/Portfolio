@@ -20,7 +20,7 @@ Despite not finishing my college degree due to financial limitations, I've compl
 
 ## 📁 Featured Projects
 
-### 🔹 [E-Commerce Order & Supply Chain Analysis](https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce%20SQL%20Project)
+### 🔹 [E-Commerce Order & Supply Chain Analysis]([https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce%20SQL%20Project](https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce-Order-Supply-Chain-Analysis))
 **Tools:** SQL, Pandas, Matplotlib, Seaborn  
 Uncovered key business insights on:
 - Sales performance by category, product, and region  
@@ -31,7 +31,7 @@ Uncovered key business insights on:
 
 ---
 
-### 🔹 [Movie Correlation Analysis](https://github.com/cartiace0004/Portfolio/tree/main/Movie%20Data%20Analysis)
+### 🔹 [Movie Correlation Analysis]([https://github.com/cartiace0004/Portfolio/tree/main/Movie%20Data%20Analysis])
 **Tools:** Python, Pandas, Seaborn  
 Analyzed 5,000+ movies to discover how budget, rating, and runtime affect box office revenue.
 
