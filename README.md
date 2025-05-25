@@ -31,7 +31,7 @@ Uncovered key business insights on:
 
 ---
 
-### 🔹 [Movie Correlation Analysis]([https://github.com/cartiace0004/Portfolio/tree/main/Movie%20Data%20Analysis])
+### 🔹 [Movie Correlation Analysis](https://github.com/cartiace0004/Portfolio/blob/main/Movie%20Correlation%20Project.ipynb)
 **Tools:** Python, Pandas, Seaborn  
 Analyzed 5,000+ movies to discover how budget, rating, and runtime affect box office revenue.
 
