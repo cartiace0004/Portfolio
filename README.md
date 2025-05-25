@@ -20,7 +20,7 @@ Despite not finishing my college degree due to financial limitations, I've compl
 
 ## 📁 Featured Projects
 
-### 🔹 [E-Commerce Order & Supply Chain Analysis]([https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce%20SQL%20Project](https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce-Order-Supply-Chain-Analysis))
+### 🔹 [E-Commerce Order & Supply Chain Exploratory Data Analysis](https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce-Order-Supply-Chain-Analysis)
 **Tools:** SQL, Pandas, Matplotlib, Seaborn  
 Uncovered key business insights on:
 - Sales performance by category, product, and region  
