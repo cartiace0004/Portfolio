@@ -31,9 +31,13 @@ Uncovered key business insights on:
 
 ---
 
-### 🔹 [Movie Correlation Analysis](https://github.com/cartiace0004/Portfolio/blob/main/Movie%20Correlation%20Project.ipynb)
-**Tools:** Python, Pandas, Seaborn  
-Analyzed 5,000+ movies to discover how budget, rating, and runtime affect box office revenue.
+### 🔹 [Employee Attrition Exploratory Data Analysis](https://github.com/cartiace0004/Portfolio/blob/main/Employee-Attrition-Exploratory-Analysis-Project.ipynb)
+**Tools:** Python, Pandas, Seaborn, Matplotlib, NumPy  
+Analyzed 1470 rows of employees to understand the patterns behind attrition in order to help business owners strengthen employee retention. This analysis involves:
+- Identify risk factors that lead to talent loss
+- Improve employee engagement and retention
+- Enhance workforce planning and productivity
+- Save costs associated with hiring and training replacements
 
 ---
 
