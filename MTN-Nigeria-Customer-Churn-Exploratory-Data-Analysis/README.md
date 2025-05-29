@@ -8,6 +8,7 @@
 
 ### Why does it matter in Business?
 - Churn is a key performance indicator for many businesses, especially in industries like:
+
   - Subscription services
   - Telecommunications
   - SaaS
@@ -19,12 +20,14 @@
 
 ## Relevance of the Analysis
 - Given MTN Nigeria's extensive subscriber base and diverse service offerings, analyzing customer churn can provide insights into:
+
   - **Customer Retention**: Understanding why customers discontinue services can help in developing strategies to improve retention.
   - **Service Improvement**: Identifying patterns in churn can highlight areas where service enhancements are needed.
   - **Market Strategy**: Analyzingg churn across different demographics and regions can inform targeted marketing and service delivery.
 
 ## The Dataset
 - The dataset was taken from [Kaggle](https://www.kaggle.com/datasets/oluwademiladeadeniyi/mtn-nigeria-customer-churn?resource=download). The dataset simulates the behaviour, preferences and churn patterns of MTN Nigeria customers in Q1 2025. It provides rich insight into device usage, data plan preferences, age, groups, tenure, churn drivers, and revenue patterns. The dataset contains 974 rows and possess the following columns:
+
   - Customer ID: A unique identifier assigned to each customer. It may appear more than once if the customer owns multiple devices.
   - Full Name: The full name of the customer. Names reflect a balance across Nigerian ethnicities and regions.
   - Date of Purchase: Month and year the device or plan was purchased. All entries are from 2025.
