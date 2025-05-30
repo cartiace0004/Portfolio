@@ -58,3 +58,6 @@ Analyzed 1470 rows of employees to understand the patterns behind attrition in o
 ---
 
 > 💡 *“Learning data step by step, project by project.”*
+
+---
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=cartiace0004.Portfolio)
