@@ -208,4 +208,4 @@ WHERE	churn_status = 'Yes' AND reason IS NOT NULL AND reason <> ''
 GROUP BY	1
 ORDER BY 	count DESC;
 ```
-![top_reason_for_churn](/plots/top_reasons_for_customer_churn.png)
+![top_reason_for_churn](plots/top_reasons_for_customer_churn.png)
