@@ -129,3 +129,38 @@ Result:
 | CUST0027      | Maryam Reyes    |              3 |
 | CUST0010      | Halima Ochoa    |              3 |
 
+**The maximum amount of devices a customer possess are 3 devices.**
+
+- Let's see if there are null values in the reason column:
+
+```sql
+SELECT
+	COUNT(*) as total_rows, 
+	COUNT(reason) as reason_filled,
+	SUM(CASE WHEN reason IS NULL OR reason = '' THEN 1 ELSE 0 END) as reason_missing
+FROM mtn_customer_churn; #690 customers have reason for churn as empty
+```
+
+Result:
+|   total_rows |   reason_filled |   reason_missing |
+|-------------:|----------------:|-----------------:|
+|          974 |             974 |              690 |
+
+**690 customers have reason for churn as empty, but these only apply to customers who HAVEN'T churned from MTN**
+
+- Let's double-check if **ALL** missing reasons are only for customers who retained:
+
+```sql
+SELECT 	DISTINCT churn_status,
+		COUNT(*) as count_missing_reason
+FROM mtn_customer_churn
+WHERE reason IS NULL OR reason = ''
+GROUP BY 1; #all of the 690 missing churn reason are from customers who have not churned
+```
+
+Result:
+| churn_status   |   count_missing_reason |
+|:---------------|-----------------------:|
+| No             |                    690 |
+
+**It seems all 690 missing reasons are from customers who haven't churned.**
