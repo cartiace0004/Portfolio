@@ -116,5 +116,16 @@ ORDER BY device_count DESC
 LIMIT 10; #the top 10 customers have a maximum device count of 3
 ```
 Result:
-|    | customer_id   | full_name       |   device_count |\n|---:|:--------------|:----------------|---------------:|\n|  0 | CUST0015      | Abubakar Garner |              3 |\n|  1 | CUST0500      | Oghene Hamilton |              3 |\n|  2 | CUST0003      | Saidu Evans     |              3 |\n|  3 | CUST0016      | Kunle Ford      |              3 |\n|  4 | CUST0020      | Amaka Reed      |              3 |\n|  5 | CUST0006      | Tamuno Lewis    |              3 |\n|  6 | CUST0025      | Ifeanyi Brown   |              3 |\n|  7 | CUST0030      | Alabo Davis     |              3 |\n|  8 | CUST0027      | Maryam Reyes    |              3 |\n|  9 | CUST0010      | Halima Ochoa    |              3 |
+| customer_id   | full_name       |   device_count |
+|:--------------|:----------------|---------------:|
+| CUST0015      | Abubakar Garner |              3 |
+| CUST0500      | Oghene Hamilton |              3 |
+| CUST0003      | Saidu Evans     |              3 |
+| CUST0016      | Kunle Ford      |              3 |
+| CUST0020      | Amaka Reed      |              3 |
+| CUST0006      | Tamuno Lewis    |              3 |
+| CUST0025      | Ifeanyi Brown   |              3 |
+| CUST0030      | Alabo Davis     |              3 |
+| CUST0027      | Maryam Reyes    |              3 |
+| CUST0010      | Halima Ochoa    |              3 |
 
