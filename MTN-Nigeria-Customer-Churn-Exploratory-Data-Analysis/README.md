@@ -49,7 +49,7 @@
 ## Data Cleaning
 - The dataset consisted of columns with their names not snake_cased. For it to be easier to code, we converted the column names to a much more efficient and easier to write on query snake_cased format:
 
-<pre> ```ALTER TABLE mtn_customer_churn
+<pre> ALTER TABLE mtn_customer_churn
 CHANGE COLUMN `Date of Purchase` date_of_purchase VARCHAR(20),
 CHANGE COLUMN `ï»¿Customer ID` customer_id VARCHAR(20),
 CHANGE COLUMN `Age` age INT,
@@ -68,4 +68,4 @@ CHANGE COLUMN `Customer Churn Status` churn_status VARCHAR(20),
 CHANGE COLUMN `Reasons for Churn` reason VARCHAR(500);
 
 ALTER TABLE mtn_customer_churn
-CHANGE COLUMN `Full Name` full_name VARCHAR(50);``` </pre>
+CHANGE COLUMN `Full Name` full_name VARCHAR(50); </pre>
