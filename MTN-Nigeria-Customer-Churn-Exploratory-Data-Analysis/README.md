@@ -99,6 +99,7 @@ customer_review, customer_tenure_mnths, subscription, unit_price, num_purchase, 
 churn_status, reason
 HAVING duplicate_count > 1;
 ```
+'| customer_id   | full_name   | duplicate_count   |\n|---------------|-------------|-------------------|'
 
 - Since there weren't any exact duplicates in the dataset, let's check the amount of devices a customer can posses in the dataset:
 
