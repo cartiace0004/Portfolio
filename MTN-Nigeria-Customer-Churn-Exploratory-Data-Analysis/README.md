@@ -219,3 +219,47 @@ ORDER BY 	count DESC;
 | Relocation                     |      27 |
 
 ![top_reason_for_churn](plots/top_reasons_for_customer_churn.png)
+
+- Pricing and cost (`Tariffs`, `Data Plans`) are major churn drivers.
+- Network quality and customer service issues also play a big role.
+- Competitor offers lure many customers away.
+- Fast data consumption hints at users hitting limits or needing better plans.
+
+## 3. Which States in Nigeria have the highest churn rates? (Top 10 states)
+- First, let's check the number of unique states there are in the dataset:
+
+```sql
+SELECT COUNT( DISTINCT state) as num_of_states
+FROM mtn_customer_churn;
+```
+|   num_of_states |
+|----------------:|
+|              35 |
+
+- There are `35` **unique States** in the dataset. Now moving to the analysis:
+
+```sql
+SELECT
+	state,
+    COUNT(*) as total_customers,
+    SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) as churned_customers,
+    ROUND((SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) as churn_rate_percent
+FROM	mtn_customer_churn
+GROUP BY	1
+ORDER BY	churn_rate_percent DESC
+LIMIT	10;
+```
+| state       |   total_customers |   churned_customers |   churn_rate_percent |
+|:------------|------------------:|--------------------:|---------------------:|
+| Adamawa     |                18 |                  11 |                61.11 |
+| Imo         |                29 |                  15 |                51.72 |
+| Akwa Ibom   |                22 |                  11 |                50    |
+| Kebbi       |                29 |                  14 |                48.28 |
+| Benue       |                28 |                  13 |                46.43 |
+| Niger       |                26 |                  11 |                42.31 |
+| Kwara       |                17 |                   7 |                41.18 |
+| Yobe        |                34 |                  13 |                38.24 |
+| Anambra     |                29 |                  11 |                37.93 |
+| Abuja (FCT) |                42 |                  15 |                35.71 |
+
+![top_states](plots/top_nigerian_states_with_highest_churn_rates.png)
