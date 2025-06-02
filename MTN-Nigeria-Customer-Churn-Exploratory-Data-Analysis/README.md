@@ -99,6 +99,7 @@ customer_review, customer_tenure_mnths, subscription, unit_price, num_purchase, 
 churn_status, reason
 HAVING duplicate_count > 1;
 ```
+Result:
 | customer_id | full_name | duplicate_count |
 |-------------|-----------|-----------------|
 
