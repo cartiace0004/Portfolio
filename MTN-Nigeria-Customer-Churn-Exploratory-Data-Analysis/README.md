@@ -72,3 +72,19 @@ ALTER TABLE mtn_customer_churn
 CHANGE COLUMN `Full Name` full_name VARCHAR(50);
 ```
 
+- Converted the `Date of Purchase` column from having the first 3 strings cite the first 3 letters of the Months in Q1 into numerical month format:
+
+```sql
+UPDATE mtn_customer_churn
+SET date_of_purchase = CONCAT(
+    CASE LEFT(date_of_purchase, 3)
+      WHEN 'Jan' THEN '01'
+      WHEN 'Feb' THEN '02'
+      WHEN 'Mar' THEN '03'
+      ELSE '00'
+	END,
+    '-20',
+    RIGHT(date_of_purchase, 2)
+);
+```
+
