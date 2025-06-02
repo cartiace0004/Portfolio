@@ -194,4 +194,5 @@ FROM mtn_customer_churn;
 |   total_customers |   churned_customers |   churn_rate_percent |
 |------------------:|--------------------:|---------------------:|
 |               974 |                 284 |                29.16 |
+
 ![overall_churn_rate](plots/overall_customer_churn_rate.png)
