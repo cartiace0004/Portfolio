@@ -403,3 +403,11 @@ ORDER BY	1, 2;
 | Yes            | Excellent         |      55 |
 
 ![customer_reviews](plots/churn_reviews_vs_churn_status.png)
+
+- Positive reviews don't guarantee loyalty:
+  	- 118 Churners rated MTN as **Excellent or Very Good**.
+  	- These represent `~41%` of all churners, which is significant.
+- Poor reviews don't always result in churn:
+  	- Of `198` customers who gave **Poor Reviews**, only 49 (`25%`) actually churned.
+  	- Majority of **unhappy customers stayed**.
+- Review sentiment and churn do not have a linear relationship. Similar to Satisfaction scores, churned customers exist across all review types.
