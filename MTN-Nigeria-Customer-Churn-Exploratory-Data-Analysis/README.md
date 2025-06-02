@@ -196,3 +196,5 @@ FROM mtn_customer_churn;
 |               974 |                 284 |                29.16 |
 
 ![overall_churn_rate](plots/overall_customer_churn_rate.png)
+
+- About `29.16%` of MTN Nigeria's Customers in the Q1 of 2025 have churned. That's almost 3 out of every 10 customers, a **significant** number worth digging into
