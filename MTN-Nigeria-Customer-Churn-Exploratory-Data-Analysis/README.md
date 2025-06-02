@@ -411,3 +411,23 @@ ORDER BY	1, 2;
   	- Of `198` customers who gave **Poor Reviews**, only 49 (`25%`) actually churned.
   	- Majority of **unhappy customers stayed**.
 - Review sentiment and churn do not have a linear relationship. Similar to Satisfaction scores, churned customers exist across all review types.
+
+### Satisfaction rate distribution by churn rate:
+
+```sql
+SELECT
+    satisfaction_rate,
+    COUNT(*) as customer_count
+FROM	mtn_customer_churn
+GROUP BY	1, 2
+ORDER BY	1, 2;
+```
+|   satisfaction_rate |   customer_count |
+|--------------------:|-----------------:|
+|                   1 |              198 |
+|                   2 |              199 |
+|                   3 |              199 |
+|                   4 |              212 |
+|                   5 |              166 |
+
+![df_satrate](plots/satisfaction_rate_distribution_by_churn_status_new.png)
