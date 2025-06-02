@@ -354,3 +354,9 @@ ORDER BY	churn_rate_percent DESC;
 - Highest churn is seen in **Long Term** (`32.11%`), **Short-Term** (`32%`), and **Very Long-Term** (`31.92%`) customers. This suggests that both new adopters and old loyal users are churning, which could indicate different churn motivations.
 - **New Customers (0-6 months)** churn the least (`19.23%`), suggesting they are likely still exploring or haven't yet encountered issues that lead to churn.
 - **Mid-Term Users (13-24 months)** also show relatively low churn (`23%`), these might be more satisfied or locked in with some value proposition.
+
+## 5. What are the satisfaction trends among Churned vs. Active customers?
+
+### We'll compare average satisfaction rates and distribution between:
+	- Customers who churned.
+ 	- Customers who are still active.
