@@ -263,3 +263,7 @@ LIMIT	10;
 | Abuja (FCT) |                42 |                  15 |                35.71 |
 
 ![top_states](plots/top_nigerian_states_with_highest_churn_rates_new.png)
+
+- Some states have churn rates well above the overall `29.16%` churn rate.
+- **Adamawa's** churn rate is particularly high at over `61%`, which could indicate major service or competition issues in the area.
+- **Abuja (FCT)**, the capital, has a churn rate below some of these states but still above average.
