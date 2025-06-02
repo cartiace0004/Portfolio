@@ -208,4 +208,14 @@ WHERE	churn_status = 'Yes' AND reason IS NOT NULL AND reason <> ''
 GROUP BY	1
 ORDER BY 	count DESC;
 ```
+| reason                         |   count |
+|:-------------------------------|--------:|
+| High Call Tarriffs             |      54 |
+| Better Offers from Competitors |      52 |
+| Poor Network                   |      45 |
+| Costly Data Plans              |      40 |
+| Poor Customer Service          |      34 |
+| Fast Data Consumption          |      32 |
+| Relocation                     |      27 |
+
 ![top_reason_for_churn](plots/top_reasons_for_customer_churn.png)
