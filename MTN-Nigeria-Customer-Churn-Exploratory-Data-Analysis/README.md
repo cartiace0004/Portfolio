@@ -68,4 +68,4 @@ CHANGE COLUMN `Customer Churn Status` churn_status VARCHAR(20),
 CHANGE COLUMN `Reasons for Churn` reason VARCHAR(500);
 
 ALTER TABLE mtn_customer_churn
-CHANGE COLUMN `Full Name` full_name VARCHAR(50); ``` </pre>
+CHANGE COLUMN `Full Name` full_name VARCHAR(50);``` </pre>
