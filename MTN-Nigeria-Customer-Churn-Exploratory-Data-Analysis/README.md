@@ -173,9 +173,9 @@ ADD COLUMN churn_flag TINYINT;
 
 UPDATE mtn_customer_churn
 SET churn_flag = CASE
-			WHEN churn_status = 'Yes' THEN 1
-                    ELSE 0
-				END;
+	WHEN churn_status = 'Yes' THEN 1
+	ELSE 0
+END;
 
 ALTER TABLE mtn_customer_churn
 MODIFY COLUMN churn_flag TINYINT AFTER churn_status; #move the churn_flag column next to the churn_status column
