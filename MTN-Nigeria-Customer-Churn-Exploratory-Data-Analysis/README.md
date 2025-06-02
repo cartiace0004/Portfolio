@@ -47,7 +47,7 @@
   - Reasons for Churn: If churned, this field shows the reason (e.g., Poor Network, Relocation, High Call Tariffs, etc.). Empty for active customers.
 
 ## Data Cleaning
-- The dataset consisted of columns with their names not snake_cased. For it to be easier to code, we converted the column names to a much more efficient and easier to write on query snake_cased format:
+1. The dataset consisted of columns with their names not snake_cased. For it to be easier to code, we converted the column names to a much more efficient and easier to write on query snake_cased format:
 
 ```sql
 ALTER TABLE mtn_customer_churn
@@ -72,7 +72,7 @@ ALTER TABLE mtn_customer_churn
 CHANGE COLUMN `Full Name` full_name VARCHAR(50);
 ```
 
-- Converted the `Date of Purchase` column from having the first 3 strings cite the first 3 letters of the Months in Q1 into numerical month format:
+2. Converted the `Date of Purchase` column from having the first 3 strings cite the first 3 letters of the Months in Q1 into numerical month format:
 
 ```sql
 UPDATE mtn_customer_churn
@@ -88,7 +88,7 @@ SET date_of_purchase = CONCAT(
 );
 ```
 
-- It was given in the Dataset description that there will be duplicate entries of `CustomerID` as this pose as customers having multiple devices listed in the Dataset, still, the possibility of **EXACT DUPLICATES** is still there; So we did that with:
+3. It was given in the Dataset description that there will be duplicate entries of `CustomerID` as this pose as customers having multiple devices listed in the Dataset, still, the possibility of **EXACT DUPLICATES** is still there; So we did that with:
 
 ```sql
 SELECT
@@ -105,7 +105,7 @@ Result:
 
 *No duplicates found in this query result.*
 
-- Since there weren't any exact duplicates in the dataset, let's check the amount of devices a customer can posses in the dataset:
+4. Since there weren't any exact duplicates in the dataset, let's check the amount of devices a customer can posses in the dataset:
 
 ```sql
 SELECT
@@ -148,7 +148,7 @@ Result:
 
 **690 customers have reason for churn as empty, but these only apply to customers who HAVEN'T churned from MTN**
 
-- Let's double-check if **ALL** missing reasons are only for customers who retained:
+5. Let's double-check if **ALL** missing reasons are only for customers who retained:
 
 ```sql
 SELECT 	DISTINCT churn_status,
@@ -165,7 +165,7 @@ Result:
 
 **It seems all 690 missing reasons are from customers who haven't churned.**
 
-- Create a `churn_flag`  column which converts the `churn_status` "Yes" and "No" into numeric 1 or 0 for deeper analysis:
+6. Create a `churn_flag`  column which converts the `churn_status` "Yes" and "No" into numeric 1 or 0 for deeper analysis:
 
 ```sql
 ALTER TABLE mtn_customer_churn
