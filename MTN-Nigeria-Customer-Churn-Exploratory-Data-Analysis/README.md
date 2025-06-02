@@ -180,3 +180,18 @@ END;
 ALTER TABLE mtn_customer_churn
 MODIFY COLUMN churn_flag TINYINT AFTER churn_status; #move the churn_flag column next to the churn_status column
 ```
+
+# Exploratory Data Analysis
+## 1. What Percentage of MTN Nigeria have churned out of the total customer base?
+
+```sql
+SELECT
+	COUNT(*) as total_customers,
+    SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) as churned_customers,
+    ROUND(SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) / COUNT(*) * 100, 2) as churn_rate_percent
+FROM mtn_customer_churn;
+```
+|   total_customers |   churned_customers |   churn_rate_percent |
+|------------------:|--------------------:|---------------------:|
+|               974 |                 284 |                29.16 |
+![overall_churn_rate](plots/overall_customer_churn_rate.png)
