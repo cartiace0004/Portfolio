@@ -267,3 +267,32 @@ LIMIT	10;
 - Some states have churn rates well above the overall `29.16%` churn rate.
 - **Adamawa's** churn rate is particularly high at over `61%`, which could indicate major service or competition issues in the area.
 - **Abuja (FCT)**, the capital, has a churn rate below some of these states but still above average.
+
+## 4. How do Age groups, Gender, or Tenure impact churn?
+- Age:
+
+```sql
+SELECT
+	CASE
+		WHEN age BETWEEN 16 AND 19 THEN 'Teen (16-19)'
+	        WHEN age BETWEEN 20 AND 29 THEN 'Young ADult (20-29)'
+	        WHEN age BETWEEN 30 AND 44 THEN 'Adult (30-44)'
+	        WHEN age BETWEEN 45 AND 59 THEN 'Mid-Age (45-59)'
+	        ELSE 'Senior (60-80)'
+	END as age_group,
+    COUNT(*) as total_customers,
+    SUM(churn_flag) as churned_customers,
+    ROUND(SUM(churn_flag) * 100.0 / COUNT(*), 2) as churn_rate_percent
+FROM	mtn_customer_churn
+GROUP BY	age_group
+ORDER BY	churn_rate_percent DESC;
+```
+| age_group           |   total_customers |   churned_customers |   churn_rate_percent |
+|:--------------------|------------------:|--------------------:|---------------------:|
+| Adult (30-44)       |               241 |                  81 |                33.61 |
+| Young ADult (20-29) |               161 |                  54 |                33.54 |
+| Senior (60-80)      |               299 |                  80 |                26.76 |
+| Mid-Age (45-59)     |               247 |                  63 |                25.51 |
+| Teen (16-19)        |                26 |                   6 |                23.08 |
+
+![age_group](plots/churn_rate_by_age_group.png)
