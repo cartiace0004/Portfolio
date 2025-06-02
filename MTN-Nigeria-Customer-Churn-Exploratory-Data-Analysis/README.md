@@ -319,3 +319,34 @@ ORDER BY	churn_rate_percent;
 | Female   |               495 |                 150 |                30.3  |
 
 ![gender](plots/churn_rate_by_gender.png)
+
+- The churn rate is slightly higher among female customers (`30.3%`) compared to male customers (`27.97%`).
+- The difference is relatively small (`~2.3%`), so gender may not be a **STRONG STANDALONE** driver of churn, but it could interact with other factors (satisfaction rate or tenure).
+
+### Tenure:
+
+```sql
+SELECT
+	CASE
+	WHEN customer_tenure_mnths BETWEEN 0 AND 6 THEN 'New (0-6)'
+        WHEN customer_tenure_mnths BETWEEN 7 AND 12 THEN 'Short-Term (7-12)'
+        WHEN customer_tenure_mnths BETWEEN 13 AND 24 THEN 'Medium-Term (13-24)'
+	WHEN customer_tenure_mnths BETWEEN 25 AND 48 THEN 'Long-Term (25-48)'
+        ELSE 'Very Long-Term (49-60)'
+	END AS tenure_group,
+    COUNT(*) as total_customers,
+    SUM(churn_flag) as churned_customers,
+    ROUND(SUM(churn_flag) * 100.0 / COUNT(*), 2) as churn_rate_percent
+FROM	mtn_customer_churn
+GROUP BY 	tenure_group
+ORDER BY	churn_rate_percent DESC;
+```
+| tenure_group           |   total_customers |   churned_customers |   churn_rate_percent |
+|:-----------------------|------------------:|--------------------:|---------------------:|
+| Long-Term (25-48)      |               383 |                 123 |                32.11 |
+| Short-Term (7-12)      |               100 |                  32 |                32    |
+| Very Long-Term (49-60) |               213 |                  68 |                31.92 |
+| Medium-Term (13-24)    |               200 |                  46 |                23    |
+| New (0-6)              |                78 |                  15 |                19.23 |
+
+![tenure](plots/churn_rate_by_tenure_group.png)
