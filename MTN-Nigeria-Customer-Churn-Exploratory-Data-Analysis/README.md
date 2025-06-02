@@ -131,7 +131,7 @@ Result:
 
 **The maximum amount of devices a customer possess are 3 devices.**
 
-- Let's see if there are null values in the reason column:
+5. Let's see if there are null values in the reason column:
 
 ```sql
 SELECT
@@ -148,7 +148,7 @@ Result:
 
 **690 customers have reason for churn as empty, but these only apply to customers who HAVEN'T churned from MTN**
 
-5. Let's double-check if **ALL** missing reasons are only for customers who retained:
+6. Let's double-check if **ALL** missing reasons are only for customers who retained:
 
 ```sql
 SELECT 	DISTINCT churn_status,
@@ -165,7 +165,7 @@ Result:
 
 **It seems all 690 missing reasons are from customers who haven't churned.**
 
-6. Create a `churn_flag`  column which converts the `churn_status` "Yes" and "No" into numeric 1 or 0 for deeper analysis:
+7. Create a `churn_flag`  column which converts the `churn_status` "Yes" and "No" into numeric 1 or 0 for deeper analysis:
 
 ```sql
 ALTER TABLE mtn_customer_churn
