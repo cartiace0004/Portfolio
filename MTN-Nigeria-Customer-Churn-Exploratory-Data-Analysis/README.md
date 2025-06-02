@@ -88,3 +88,26 @@ SET date_of_purchase = CONCAT(
 );
 ```
 
+- It was given in the Dataset description that there will be duplicate entries of `CustomerID` as this pose as customers having multiple devices listed in the Dataset, still, the possibility of **EXACT DUPLICATES** is still there; So we did that with:
+
+```sql
+SELECT
+customer_id, full_name, COUNT(*) as duplicate_count
+FROM mtn_customer_churn
+GROUP BY customer_id, full_name, date_of_purchase, age, state, mtn_device, gender, satisfaction_rate,
+customer_review, customer_tenure_mnths, subscription, unit_price, num_purchase, total_revenue, data_usage,
+churn_status, reason
+HAVING duplicate_count > 1;
+```
+
+- Since there weren't any exact duplicates in the dataset, let's check the amount of devices a customer can posses in the dataset:
+
+```sql
+SELECT
+customer_id, full_name, COUNT(DISTINCT mtn_device) as device_count
+FROM mtn_customer_churn
+GROUP BY 1, 2
+ORDER BY device_count DESC
+LIMIT 10; #the top 10 customers have a maximum device count of 3
+```
+
