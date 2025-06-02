@@ -198,3 +198,14 @@ FROM mtn_customer_churn;
 ![overall_churn_rate](plots/overall_customer_churn_rate.png)
 
 - About `29.16%` of MTN Nigeria's Customers in the Q1 of 2025 have churned. That's almost 3 out of every 10 customers, a **significant** number worth digging into
+
+## 2. What are the top reasons for churn?
+
+```sql
+SELECT	reason, COUNT(*) as count
+FROM	mtn_customer_churn
+WHERE	churn_status = 'Yes' AND reason IS NOT NULL AND reason <> ''
+GROUP BY	1
+ORDER BY 	count DESC;
+```
+![top_reason_for_churn](/plots/top_reasons_for_customer_churn.png)
