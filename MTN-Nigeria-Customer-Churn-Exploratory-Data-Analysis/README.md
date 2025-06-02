@@ -49,4 +49,26 @@
 ## Data Cleaning
 - The dataset consisted of columns with their names not snake_cased. For it to be easier to code, we converted the column names to a much more efficient and easier to write on query snake_cased format:
 
-<pre> ```sql ALTER TABLE mtn_customer_churn CHANGE COLUMN `Date of Purchase` date_of_purchase VARCHAR(20), CHANGE COLUMN `ï»¿Customer ID` customer_id VARCHAR(20), CHANGE COLUMN `Age` age INT, CHANGE COLUMN `State` state VARCHAR(20), CHANGE COLUMN `MTN Device` mtn_device VARCHAR(20), CHANGE COLUMN `Gender` gender VARCHAR(20), CHANGE COLUMN `Satisfaction Rate` satisfaction_rate INT, CHANGE COLUMN `Customer Review` customer_review VARCHAR(20), CHANGE COLUMN `Customer Tenure in months` customer_tenure_mnths INT, CHANGE COLUMN `Subscription Plan` subscription VARCHAR(500), CHANGE COLUMN `Unit Price` unit_price INT, CHANGE COLUMN `Number of Times Purchased` num_purchase INT, CHANGE COLUMN `Total Revenue` total_revenue INT, CHANGE COLUMN `Data Usage` data_usage DECIMAL(5, 2), CHANGE COLUMN `Customer Churn Status` churn_status VARCHAR(20), CHANGE COLUMN `Reasons for Churn` reason VARCHAR(500); ALTER TABLE mtn_customer_churn CHANGE COLUMN `Full Name` full_name VARCHAR(50); ``` </pre>
+```sql
+ALTER TABLE mtn_customer_churn
+CHANGE COLUMN `Date of Purchase` date_of_purchase VARCHAR(20),
+CHANGE COLUMN `ï»¿Customer ID` customer_id VARCHAR(20),
+CHANGE COLUMN `Age` age INT,
+CHANGE COLUMN `State` state VARCHAR(20),
+CHANGE COLUMN `MTN Device` mtn_device VARCHAR(20),
+CHANGE COLUMN `Gender` gender VARCHAR(20),
+CHANGE COLUMN `Satisfaction Rate` satisfaction_rate INT,
+CHANGE COLUMN `Customer Review` customer_review VARCHAR(20),
+CHANGE COLUMN `Customer Tenure in months` customer_tenure_mnths INT,
+CHANGE COLUMN `Subscription Plan` subscription VARCHAR(500),
+CHANGE COLUMN `Unit Price` unit_price INT,
+CHANGE COLUMN `Number of Times Purchased` num_purchase INT,
+CHANGE COLUMN `Total Revenue` total_revenue INT,
+CHANGE COLUMN `Data Usage` data_usage DECIMAL(5, 2),
+CHANGE COLUMN `Customer Churn Status` churn_status VARCHAR(20),
+CHANGE COLUMN `Reasons for Churn` reason VARCHAR(500);
+
+ALTER TABLE mtn_customer_churn
+CHANGE COLUMN `Full Name` full_name VARCHAR(50);
+```
+
