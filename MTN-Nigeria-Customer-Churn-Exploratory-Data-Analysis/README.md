@@ -357,6 +357,49 @@ ORDER BY	churn_rate_percent DESC;
 
 ## 5. What are the satisfaction trends among Churned vs. Active customers?
 
-### We'll compare average satisfaction rates and distribution between:
-	- Customers who churned.
- 	- Customers who are still active.
+### Average Satisfaction by Churn Status:
+
+```sql
+SELECT
+	churn_status,
+	COUNT(*) as total_customers,
+	ROUND(AVG(satisfaction_rate), 2) as avg_satisfaction
+FROM	mtn_customer_churn
+GROUP BY	1;
+```
+| churn_status   |   total_customers |   avg_satisfaction |
+|:---------------|------------------:|-------------------:|
+| Yes            |               284 |               3.05 |
+| No             |               690 |               2.91 |
+
+![average_satisfaction](plots/avg_satisfaction_score_by_churn_status.png)
+
+- Surprisingly, customers who churned actually had a slightly higher average satisfaction score (`3.05`) than those who stayed (`2.91`).
+- This contradicts the typical expectation that lower satisfaction directly leads to higher churn.
+- It suggests that other factors, such as pricing, competition, or tenure, may be stronger churn drivers than satisfaction alone.
+
+### Analyze Customer Reviews vs Churn to see if subjective sentiment matches the churn behavior:
+
+```sql
+SELECT
+	churn_status,
+	customer_review,
+    	COUNT(*) as count
+FROM	mtn_customer_churn
+GROUP BY	1, 2
+ORDER BY	1, 2;
+```
+| churn_status   | customer_review   |   count |
+|:---------------|:------------------|--------:|
+| No             | Poor              |     149 |
+| Yes            | Poor              |      49 |
+| No             | Fair              |     138 |
+| Yes            | Fair              |      61 |
+| No             | Good              |     143 |
+| Yes            | Good              |      56 |
+| No             | Very Good         |     149 |
+| Yes            | Very Good         |      63 |
+| No             | Excellent         |     111 |
+| Yes            | Excellent         |      55 |
+
+![customer_reviews](plots/churn_reviews_vs_churn_status.png)
