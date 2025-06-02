@@ -262,4 +262,4 @@ LIMIT	10;
 | Anambra     |                29 |                  11 |                37.93 |
 | Abuja (FCT) |                42 |                  15 |                35.71 |
 
-![top_states](plots/top_nigerian_states_with_highest_churn_rates.png)
+![top_states](plots/top_nigerian_states_with_highest_churn_rates_new.png)
