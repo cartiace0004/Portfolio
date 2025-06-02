@@ -181,8 +181,8 @@ ALTER TABLE mtn_customer_churn
 MODIFY COLUMN churn_flag TINYINT AFTER churn_status; #move the churn_flag column next to the churn_status column
 ```
 
-# Exploratory Data Analysis
-## 1. What Percentage of MTN Nigeria have churned out of the total customer base?
+## Exploratory Data Analysis
+### 1. What Percentage of MTN Nigeria have churned out of the total customer base?
 
 ```sql
 SELECT
@@ -199,7 +199,7 @@ FROM mtn_customer_churn;
 
 - About `29.16%` of MTN Nigeria's Customers in the Q1 of 2025 have churned. That's almost 3 out of every 10 customers, a **significant** number worth digging into
 
-## 2. What are the top reasons for churn?
+### 2. What are the top reasons for churn?
 
 ```sql
 SELECT	reason, COUNT(*) as count
@@ -225,7 +225,7 @@ ORDER BY 	count DESC;
 - Competitor offers lure many customers away.
 - Fast data consumption hints at users hitting limits or needing better plans.
 
-## 3. Which States in Nigeria have the highest churn rates? (Top 10 states)
+### 3. Which States in Nigeria have the highest churn rates? (Top 10 states)
 - First, let's check the number of unique states there are in the dataset:
 
 ```sql
@@ -268,8 +268,8 @@ LIMIT	10;
 - **Adamawa's** churn rate is particularly high at over `61%`, which could indicate major service or competition issues in the area.
 - **Abuja (FCT)**, the capital, has a churn rate below some of these states but still above average.
 
-## 4. How do Age groups, Gender, or Tenure impact churn?
-### Age:
+### 4. How do Age groups, Gender, or Tenure impact churn?
+#### Age:
 
 ```sql
 SELECT
@@ -301,7 +301,7 @@ ORDER BY	churn_rate_percent DESC;
 - **Seniors and Mid-Age** customers show more loyalty (lower churn). Possibly less likely to switch due to digital barriers or brand familiarity.
 - **Teen** churn is the lowest but sample size is very small (`26`), so conclusions here should be cautious.
 
-### Gender:
+#### Gender:
 
 ```sql
 SELECT
@@ -323,7 +323,7 @@ ORDER BY	churn_rate_percent;
 - The churn rate is slightly higher among female customers (`30.3%`) compared to male customers (`27.97%`).
 - The difference is relatively small (`~2.3%`), so gender may not be a **STRONG STANDALONE** driver of churn, but it could interact with other factors (satisfaction rate or tenure).
 
-### Tenure:
+#### Tenure:
 
 ```sql
 SELECT
@@ -355,9 +355,9 @@ ORDER BY	churn_rate_percent DESC;
 - **New Customers (0-6 months)** churn the least (`19.23%`), suggesting they are likely still exploring or haven't yet encountered issues that lead to churn.
 - **Mid-Term Users (13-24 months)** also show relatively low churn (`23%`), these might be more satisfied or locked in with some value proposition.
 
-## 5. What are the satisfaction trends among Churned vs. Active customers?
+### 5. What are the satisfaction trends among Churned vs. Active customers?
 
-### Satisfaction rate distribution by churn rate:
+#### Satisfaction rate distribution by churn rate:
 
 ```sql
 SELECT
@@ -377,7 +377,7 @@ ORDER BY	1, 2;
 
 ![df_satrate](plots/satisfaction_rate_distribution_by_churn_status_new.png)
 
-### Average Satisfaction by Churn Status:
+#### Average Satisfaction by Churn Status:
 
 ```sql
 SELECT
@@ -398,7 +398,7 @@ GROUP BY	1;
 - This contradicts the typical expectation that lower satisfaction directly leads to higher churn.
 - It suggests that other factors, such as pricing, competition, or tenure, may be stronger churn drivers than satisfaction alone.
 
-### Analyze Customer Reviews vs Churn to see if subjective sentiment matches the churn behavior:
+#### Analyze Customer Reviews vs Churn to see if subjective sentiment matches the churn behavior:
 
 ```sql
 SELECT
