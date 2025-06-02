@@ -164,3 +164,19 @@ Result:
 | No             |                    690 |
 
 **It seems all 690 missing reasons are from customers who haven't churned.**
+
+- Create a `churn_flag`  column which converts the `churn_status` "Yes" and "No" into numeric 1 or 0 for deeper analysis:
+
+```sql
+ALTER TABLE mtn_customer_churn
+ADD COLUMN churn_flag TINYINT;
+
+UPDATE mtn_customer_churn
+SET churn_flag = CASE
+			WHEN churn_status = 'Yes' THEN 1
+                    ELSE 0
+				END;
+
+ALTER TABLE mtn_customer_churn
+MODIFY COLUMN churn_flag TINYINT AFTER churn_status; #move the churn_flag column next to the churn_status column
+```
