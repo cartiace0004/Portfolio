@@ -516,39 +516,6 @@ ORDER BY 	churn_rate_percent DESC;
 
 ### 7. How much Revenue is lost to Churn?
 
-#### Check the prices of each Subscription Plan:
-
-```sql
-SELECT	DISTINCT subscription, unit_price
-FROM	mtn_customer_churn
-ORDER BY	2 DESC;
-```
-| subscription                 |   unit_price |
-|:-----------------------------|-------------:|
-| 1.5TB Yearly Broadband Plan  |       150000 |
-| 450GB 3-Month Broadband Plan |        75000 |
-| 165GB Monthly Plan           |        35000 |
-| 300GB FUP Monthly Unlimited  |        30000 |
-| 200GB Monthly Broadband Plan |        25000 |
-| 120GB Monthly Broadband Plan |        24000 |
-| 150GB FUP Monthly Unlimited  |        20000 |
-| 65GB Monthly Plan            |        16000 |
-| 60GB Monthly Broadband Plan  |        14500 |
-| 25GB Monthly Plan            |         9000 |
-| 30GB Monthly Broadband Plan  |         9000 |
-| 20GB Monthly Plan            |         7500 |
-| 16.5GB+10mins Monthly Plan   |         6500 |
-| 12.5GB Monthly Plan          |         5500 |
-| 10GB+10mins Monthly Plan     |         4500 |
-| 7GB Monthly Plan             |         3500 |
-| 3.2GB 2-Day Plan             |         1000 |
-| 2.5GB 2-Day Plan             |          900 |
-| 1.5GB 2-Day Plan             |          600 |
-| 1GB+1.5mins Daily Plan       |          500 |
-| 500MB Daily Plan             |          350 |
-
-![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
-
 #### Double check for inconsistent prices in the table
 
 ```sql
@@ -585,3 +552,78 @@ FROM	revenue_stats;
 |                58000200 |       199348200 |                   29.09 |
 
 ![rev_distribution](plots/revenue_distribution_lost_to_churn_vs_retained.png)
+
+- Key Metrics:
+  - **Total Revenue (All Customers)**: `199,348,200`
+  - **Revenue lost to Churned Customers**: `58,000,200`
+  - **% of Revenue Lost to Churn**: `29.09%`
+- Nearly **₦1** out of every **₦3** earned is lost due to customers leaving MTN, a major revenue risk.
+
+#### Check the prices of each Subscription Plan:
+
+```sql
+SELECT	DISTINCT subscription, unit_price
+FROM	mtn_customer_churn
+ORDER BY	2 DESC;
+```
+| subscription                 |   unit_price |
+|:-----------------------------|-------------:|
+| 1.5TB Yearly Broadband Plan  |       150000 |
+| 450GB 3-Month Broadband Plan |        75000 |
+| 165GB Monthly Plan           |        35000 |
+| 300GB FUP Monthly Unlimited  |        30000 |
+| 200GB Monthly Broadband Plan |        25000 |
+| 120GB Monthly Broadband Plan |        24000 |
+| 150GB FUP Monthly Unlimited  |        20000 |
+| 65GB Monthly Plan            |        16000 |
+| 60GB Monthly Broadband Plan  |        14500 |
+| 25GB Monthly Plan            |         9000 |
+| 30GB Monthly Broadband Plan  |         9000 |
+| 20GB Monthly Plan            |         7500 |
+| 16.5GB+10mins Monthly Plan   |         6500 |
+| 12.5GB Monthly Plan          |         5500 |
+| 10GB+10mins Monthly Plan     |         4500 |
+| 7GB Monthly Plan             |         3500 |
+| 3.2GB 2-Day Plan             |         1000 |
+| 2.5GB 2-Day Plan             |          900 |
+| 1.5GB 2-Day Plan             |          600 |
+| 1GB+1.5mins Daily Plan       |          500 |
+| 500MB Daily Plan             |          350 |
+
+![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
+
+#### Revenue Lost to Churn by Subscription Plan
+
+```sql
+SELECT
+	subscription,
+    COUNT(*) as churned_customers,
+    SUM(total_revenue) as revenue_lost
+FROM	mtn_customer_churn
+WHERE	churn_status = 'Yes'
+GROUP BY	1
+ORDER BY	revenue_lost DESC;
+```
+| subscription                 |   churned_customers |    revenue_lost |
+|:-----------------------------|--------------------:|----------------:|
+| 1.5TB Yearly Broadband Plan  |                   7 | 15300000        |
+| 165GB Monthly Plan           |                  21 | 7595000         |
+| 300GB FUP Monthly Unlimited  |                  22 | 6900000         |
+| 450GB 3-Month Broadband Plan |                   6 | 4425000         |
+| 200GB Monthly Broadband Plan |                  14 |      4.1e+06    |
+| 150GB FUP Monthly Unlimited  |                  19 |      3.58e+06   |
+| 120GB Monthly Broadband Plan |                  14 |      3.456e+06  |
+| 65GB Monthly Plan            |                  23 |      3.2e+06    |
+| 60GB Monthly Broadband Plan  |                  21 |      2.9725e+06 |
+| 30GB Monthly Broadband Plan  |                  22 |      1.881e+06  |
+| 25GB Monthly Plan            |                  16 |      1.449e+06  |
+| 16.5GB+10mins Monthly Plan   |                  10 | 754000          |
+| 10GB+10mins Monthly Plan     |                  14 | 639000          |
+| 20GB Monthly Plan            |                   8 | 555000          |
+| 12.5GB Monthly Plan          |                  10 | 533500          |
+| 7GB Monthly Plan             |                   8 | 259000          |
+| 3.2GB 2-Day Plan             |                  15 | 157000          |
+| 2.5GB 2-Day Plan             |                  10 | 110700          |
+| 1.5GB 2-Day Plan             |                   9 |  64200          |
+| 1GB+1.5mins Daily Plan       |                   7 |  42000          |
+| 500MB Daily Plan             |                   8 |  27300          |
