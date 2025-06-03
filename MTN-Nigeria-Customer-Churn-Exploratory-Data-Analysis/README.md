@@ -431,3 +431,26 @@ ORDER BY	1, 2;
   	- Of `198` customers who gave **Poor Reviews**, only 49 (`25%`) actually churned.
   	- Majority of **unhappy customers stayed**.
 - Review sentiment and churn do not have a linear relationship. Similar to Satisfaction scores, churned customers exist across all review types.
+
+### 6. Which Devices or Data Plans have the highest Churn?
+
+#### Churn Rate by MTN Device
+
+```sql
+SELECT
+	mtn_device,
+    	COUNT(*) as total_customers,
+	SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) as churned_customers,
+    	ROUND(SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) as churn_rate_percent
+FROM	mtn_customer_churn
+GROUP BY	1
+ORDER BY	churn_rate_percent DESC;
+```
+| mtn_device          |   total_customers |   churned_customers |   churn_rate_percent |
+|:--------------------|------------------:|--------------------:|---------------------:|
+| Mobile SIM Card     |               301 |                  94 |                31.23 |
+| 4G Router           |               216 |                  65 |                30.09 |
+| 5G Broadband Router |               229 |                  64 |                27.95 |
+| Broadband MiFi      |               228 |                  61 |                26.75 |
+
+![churn_mtn_device](plots/churn_rate_by_MTN_device.png)
