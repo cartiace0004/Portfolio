@@ -583,3 +583,5 @@ FROM	revenue_stats;
 |   revenue_lost_to_churn |   total_revenue |   churn_revenue_percent |
 |------------------------:|----------------:|------------------------:|
 |                58000200 |       199348200 |                   29.09 |
+
+![rev_distribution](plots/revenue_distribution_lost_to_churn_vs_retained.png)
