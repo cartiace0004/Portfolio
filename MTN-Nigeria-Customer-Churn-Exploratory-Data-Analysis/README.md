@@ -499,4 +499,41 @@ ORDER BY	2 DESC;
 
 ![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
 
+##### Now let's check the Churn Rate percentages per Subscription Plan
+
+```sql
+SELECT
+	subscription,
+    COUNT(*) as total_customers,
+    SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) as churned_customers,
+    ROUND(SUM(CASE WHEN churn_status = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) as churn_rate_percent
+FROM	mtn_customer_churn
+GROUP BY	1
+ORDER BY 	churn_rate_percent DESC;
+```
+| subscription                 |   total_customers |   churned_customers |   churn_rate_percent |
+|:-----------------------------|------------------:|--------------------:|---------------------:|
+| 200GB Monthly Broadband Plan |                31 |                  14 |                45.16 |
+| 3.2GB 2-Day Plan             |                35 |                  15 |                42.86 |
+| 65GB Monthly Plan            |                63 |                  23 |                36.51 |
+| 20GB Monthly Plan            |                23 |                   8 |                34.78 |
+| 2.5GB 2-Day Plan             |                30 |                  10 |                33.33 |
+| 16.5GB+10mins Monthly Plan   |                30 |                  10 |                33.33 |
+| 25GB Monthly Plan            |                49 |                  16 |                32.65 |
+| 1.5GB 2-Day Plan             |                29 |                   9 |                31.03 |
+| 300GB FUP Monthly Unlimited  |                72 |                  22 |                30.56 |
+| 7GB Monthly Plan             |                27 |                   8 |                29.63 |
+| 1GB+1.5mins Daily Plan       |                24 |                   7 |                29.17 |
+| 165GB Monthly Plan           |                73 |                  21 |                28.77 |
+| 30GB Monthly Broadband Plan  |                77 |                  22 |                28.57 |
+| 1.5TB Yearly Broadband Plan  |                25 |                   7 |                28    |
+| 500MB Daily Plan             |                29 |                   8 |                27.59 |
+| 12.5GB Monthly Plan          |                38 |                  10 |                26.32 |
+| 60GB Monthly Broadband Plan  |                81 |                  21 |                25.93 |
+| 150GB FUP Monthly Unlimited  |                78 |                  19 |                24.36 |
+| 450GB 3-Month Broadband Plan |                25 |                   6 |                24    |
+| 10GB+10mins Monthly Plan     |                67 |                  14 |                20.9  |
+| 120GB Monthly Broadband Plan |                68 |                  14 |                20.59 |
+
+![churn_per_subscription](plots/churn_rate_by_subscription_plan.png)
 
