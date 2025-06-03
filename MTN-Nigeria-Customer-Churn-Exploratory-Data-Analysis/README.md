@@ -516,7 +516,7 @@ ORDER BY 	churn_rate_percent DESC;
 
 ### 7. How much Revenue is lost to Churn?
 
-##### Check the prices of each Subscription Plan:
+#### Check the prices of each Subscription Plan:
 
 ```sql
 SELECT	DISTINCT subscription, unit_price
@@ -549,7 +549,7 @@ ORDER BY	2 DESC;
 
 ![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
 
-##### Double check for inconsistent prices in the table
+#### Double check for inconsistent prices in the table
 
 ```sql
 SELECT
@@ -563,3 +563,23 @@ HAVING	COUNT(DISTINCT unit_price) > 1;
 |----------------|------------------|
 
 *No inconsistencies found in this query result.*
+
+#### Get the Total Revenue lost due to Churn
+
+```sql
+WITH
+	revenue_stats as (
+    	SELECT
+		SUM(CASE WHEN churn_status = 'Yes' THEN total_revenue ELSE 0 END) as revenue_lost_to_churn,
+        	SUM(total_revenue) as total_revenue
+	FROM	mtn_customer_churn)
+
+	SELECT
+		revenue_lost_to_churn,
+    		total_revenue,
+    		ROUND((revenue_lost_to_churn / total_revenue) * 100, 2) as churn_revenue_percent
+FROM	revenue_stats;
+```
+|   revenue_lost_to_churn |   total_revenue |   churn_revenue_percent |
+|------------------------:|----------------:|------------------------:|
+|                58000200 |       199348200 |                   29.09 |
