@@ -610,13 +610,13 @@ ORDER BY	revenue_lost DESC;
 | 165GB Monthly Plan           |                  21 | 7595000         |
 | 300GB FUP Monthly Unlimited  |                  22 | 6900000         |
 | 450GB 3-Month Broadband Plan |                   6 | 4425000         |
-| 200GB Monthly Broadband Plan |                  14 |      4.1e+06    |
-| 150GB FUP Monthly Unlimited  |                  19 |      3.58e+06   |
-| 120GB Monthly Broadband Plan |                  14 |      3.456e+06  |
-| 65GB Monthly Plan            |                  23 |      3.2e+06    |
-| 60GB Monthly Broadband Plan  |                  21 |      2.9725e+06 |
-| 30GB Monthly Broadband Plan  |                  22 |      1.881e+06  |
-| 25GB Monthly Plan            |                  16 |      1.449e+06  |
+| 200GB Monthly Broadband Plan |                  14 | 4100000         |
+| 150GB FUP Monthly Unlimited  |                  19 | 3580000         |
+| 120GB Monthly Broadband Plan |                  14 | 3456000         |
+| 65GB Monthly Plan            |                  23 | 3200000         |
+| 60GB Monthly Broadband Plan  |                  21 | 2972500         |
+| 30GB Monthly Broadband Plan  |                  22 | 1881000         |
+| 25GB Monthly Plan            |                  16 | 1449000         |
 | 16.5GB+10mins Monthly Plan   |                  10 | 754000          |
 | 10GB+10mins Monthly Plan     |                  14 | 639000          |
 | 20GB Monthly Plan            |                   8 | 555000          |
@@ -627,3 +627,13 @@ ORDER BY	revenue_lost DESC;
 | 1.5GB 2-Day Plan             |                   9 |  64200          |
 | 1GB+1.5mins Daily Plan       |                   7 |  42000          |
 | 500MB Daily Plan             |                   8 |  27300          |
+
+![rev_lost_sub_plan](plots/revenue_lost_to_churn_by_subscription_plan.png)
+
+- The **1.5TB Yearly Broadband Plan**, despite only 7 churned customers, caused the highest revenue loss of ``₦15.3`` million, a direct result of its premium pricing (`₦150,000` per user)
+- Other high-value plans with significant losses:
+  - **165GB Monthly Plan**: `₦7.6M` lost from 21 churned users
+  - **300GB FUP Monthly Unlimited**: `₦6.9M` from 22 churned users
+  - **450GB 3-Month Plan**: `₦4.4M` from 6 users
+  - **200GB Monthly Broadband Plan**: `₦4.1M` from 14 users
+- These premium plans have fewer users but high price points, meaning each churned customer has a larger financial impact.
