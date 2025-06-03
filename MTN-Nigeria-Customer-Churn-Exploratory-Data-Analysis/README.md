@@ -46,7 +46,7 @@
   - Customer Churn Status: Indicates whether the customer has churned (Yes) or is still active (No).
   - Reasons for Churn: If churned, this field shows the reason (e.g., Poor Network, Relocation, High Call Tariffs, etc.). Empty for active customers.
 
-The currency used in the dataset is **Nigerian Naira (₦)**
+The currency used in the dataset is **Nigerian Naira (₦)**.
 
 ## Data Cleaning
 1. The dataset consisted of columns with their names not snake_cased. For it to be easier to code, we converted the column names to a much more efficient and easier to write on query snake_cased format:
