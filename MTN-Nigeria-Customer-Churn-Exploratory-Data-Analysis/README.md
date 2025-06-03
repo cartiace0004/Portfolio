@@ -537,3 +537,6 @@ ORDER BY 	churn_rate_percent DESC;
 
 ![churn_per_subscription](plots/churn_rate_by_subscription_plan.png)
 
+- High-volume and short-term plans (like the **200GB Monthly Plan and 3.2GB 2-Day Plan**) have the highest churn rates, over `40%`.
+- Smaller or mid-sized monthly plans like **65GB, 25GB and 20GB** also show above-average churn.
+- Large, long-term Broadband Plans like **1.5TB Yearly Plan, 120GB Monthly and 150GB FUP Unlimited** have the lowest churn rates (under `25%`).
