@@ -466,40 +466,6 @@ ORDER BY	churn_rate_percent DESC;
   - Better data experience or bundling incentives.
 
 #### Churn Rate by Subscription Plan
-##### Check the prices of each Subscription Plan:
-
-```sql
-SELECT	DISTINCT subscription, unit_price
-FROM	mtn_customer_churn
-ORDER BY	2 DESC;
-```
-| subscription                 |   unit_price |
-|:-----------------------------|-------------:|
-| 1.5TB Yearly Broadband Plan  |       150000 |
-| 450GB 3-Month Broadband Plan |        75000 |
-| 165GB Monthly Plan           |        35000 |
-| 300GB FUP Monthly Unlimited  |        30000 |
-| 200GB Monthly Broadband Plan |        25000 |
-| 120GB Monthly Broadband Plan |        24000 |
-| 150GB FUP Monthly Unlimited  |        20000 |
-| 65GB Monthly Plan            |        16000 |
-| 60GB Monthly Broadband Plan  |        14500 |
-| 25GB Monthly Plan            |         9000 |
-| 30GB Monthly Broadband Plan  |         9000 |
-| 20GB Monthly Plan            |         7500 |
-| 16.5GB+10mins Monthly Plan   |         6500 |
-| 12.5GB Monthly Plan          |         5500 |
-| 10GB+10mins Monthly Plan     |         4500 |
-| 7GB Monthly Plan             |         3500 |
-| 3.2GB 2-Day Plan             |         1000 |
-| 2.5GB 2-Day Plan             |          900 |
-| 1.5GB 2-Day Plan             |          600 |
-| 1GB+1.5mins Daily Plan       |          500 |
-| 500MB Daily Plan             |          350 |
-
-![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
-
-##### Now let's check the Churn Rate percentages per Subscription Plan
 
 ```sql
 SELECT
@@ -537,6 +503,63 @@ ORDER BY 	churn_rate_percent DESC;
 
 ![churn_per_subscription](plots/churn_rate_by_subscription_plan.png)
 
-- High-volume and short-term plans (like the **200GB Monthly Plan and 3.2GB 2-Day Plan**) have the highest churn rates, over `40%`.
+- The **200GB Monthly Plan and 3.2GB 2-Day Plan**) have the highest churn rates, over `40%`.
 - Smaller or mid-sized monthly plans like **65GB, 25GB and 20GB** also show above-average churn.
 - Large, long-term Broadband Plans like **1.5TB Yearly Plan, 120GB Monthly and 150GB FUP Unlimited** have the lowest churn rates (under `25%`).
+- Higher churn in smaller or short-duration plans suggest that users on these may be:
+  - Trying out the service
+  - Price-sensitive
+  - Unhappy with value-for-money
+- Longer-term and higher-volume plans likely retain customers better due to:
+  - Higher commitment and investment
+  - Possibly better experiences or perceived value
+
+### 7. How much Revenue is lost to Churn?
+
+##### Check the prices of each Subscription Plan:
+
+```sql
+SELECT	DISTINCT subscription, unit_price
+FROM	mtn_customer_churn
+ORDER BY	2 DESC;
+```
+| subscription                 |   unit_price |
+|:-----------------------------|-------------:|
+| 1.5TB Yearly Broadband Plan  |       150000 |
+| 450GB 3-Month Broadband Plan |        75000 |
+| 165GB Monthly Plan           |        35000 |
+| 300GB FUP Monthly Unlimited  |        30000 |
+| 200GB Monthly Broadband Plan |        25000 |
+| 120GB Monthly Broadband Plan |        24000 |
+| 150GB FUP Monthly Unlimited  |        20000 |
+| 65GB Monthly Plan            |        16000 |
+| 60GB Monthly Broadband Plan  |        14500 |
+| 25GB Monthly Plan            |         9000 |
+| 30GB Monthly Broadband Plan  |         9000 |
+| 20GB Monthly Plan            |         7500 |
+| 16.5GB+10mins Monthly Plan   |         6500 |
+| 12.5GB Monthly Plan          |         5500 |
+| 10GB+10mins Monthly Plan     |         4500 |
+| 7GB Monthly Plan             |         3500 |
+| 3.2GB 2-Day Plan             |         1000 |
+| 2.5GB 2-Day Plan             |          900 |
+| 1.5GB 2-Day Plan             |          600 |
+| 1GB+1.5mins Daily Plan       |          500 |
+| 500MB Daily Plan             |          350 |
+
+![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
+
+##### Double check for inconsistent prices in the table
+
+```sql
+SELECT
+	subscription,
+    COUNT(DISTINCT unit_price) as price_variants
+FROM	mtn_customer_churn
+GROUP BY	1
+HAVING	COUNT(DISTINCT unit_price) > 1;
+```
+| subscription   | price_variants   |
+|----------------|------------------|
+
+*No inconsistencies found in this query result.*
