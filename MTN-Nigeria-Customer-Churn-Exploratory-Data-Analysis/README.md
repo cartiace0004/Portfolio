@@ -473,6 +473,30 @@ SELECT	DISTINCT subscription, unit_price
 FROM	mtn_customer_churn
 ORDER BY	2 DESC;
 ```
+| subscription                 |   unit_price |
+|:-----------------------------|-------------:|
+| 1.5TB Yearly Broadband Plan  |       150000 |
+| 450GB 3-Month Broadband Plan |        75000 |
+| 165GB Monthly Plan           |        35000 |
+| 300GB FUP Monthly Unlimited  |        30000 |
+| 200GB Monthly Broadband Plan |        25000 |
+| 120GB Monthly Broadband Plan |        24000 |
+| 150GB FUP Monthly Unlimited  |        20000 |
+| 65GB Monthly Plan            |        16000 |
+| 60GB Monthly Broadband Plan  |        14500 |
+| 25GB Monthly Plan            |         9000 |
+| 30GB Monthly Broadband Plan  |         9000 |
+| 20GB Monthly Plan            |         7500 |
+| 16.5GB+10mins Monthly Plan   |         6500 |
+| 12.5GB Monthly Plan          |         5500 |
+| 10GB+10mins Monthly Plan     |         4500 |
+| 7GB Monthly Plan             |         3500 |
+| 3.2GB 2-Day Plan             |         1000 |
+| 2.5GB 2-Day Plan             |          900 |
+| 1.5GB 2-Day Plan             |          600 |
+| 1GB+1.5mins Daily Plan       |          500 |
+| 500MB Daily Plan             |          350 |
+
 ![prices_sub_plan](plots/MTN_nigeria_subscription_plan_prices.png)
 
 
