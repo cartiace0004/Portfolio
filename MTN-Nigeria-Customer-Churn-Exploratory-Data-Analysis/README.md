@@ -454,3 +454,13 @@ ORDER BY	churn_rate_percent DESC;
 | Broadband MiFi      |               228 |                  61 |                26.75 |
 
 ![churn_mtn_device](plots/churn_rate_by_MTN_device.png)
+
+- **Mobile SIM Card** users have the highest churn rate (`31.23%`), slightly above the **4G Router Users** (`30.09%`).
+- **Advanced Devices (5G Broadband Router and Broadband MiFi)** have lower churn rates (`~27%`), suggesting better satisfaction or possibly more premium users.
+- Higher churn in smaller or short-duration plans suggests that users on these may be:
+   - Trying out the service.
+   - Price-sensitive.
+   - Unhappy with value-for-money.
+- Longer-term and higher-volume plans likely retain customers better due to:
+   - Higher commitment and investment.
+   - Possibly better experiences or perceived value.
