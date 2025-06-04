@@ -22,12 +22,16 @@ Despite not finishing my college degree due to financial limitations, I've compl
 
 ### 🔹 [MTN Nigeria Customer Churn Exploratory Data Analysis](https://github.com/cartiace0004/Portfolio/blob/main/MTN-Nigeria-Customer-Churn-Exploratory-Data-Analysis/README.md)
 **Tools:** SQL, Pandas, Matplotlib, Seaborn  
-Uncovered key business insights on:
-- Sales performance by category, product, and region  
-- Delivery trends and logistics inefficiencies  
-- Customer spending patterns and payment behavior
+In this project, we uncover MTN Nigeria's significant churn percentages in Q1 2025. Customer churn is a business phenomenon where customers suddenly stop relations on a certain business, much like to attrition. We uncovered key business insights on:
+- Overall percentage of MTN Nigeria's Customers who have churned.
+- Top reasons for churn.
+- Top 10 States in Nigeria who have the highest churn rates.
+- How Age Groups, Gender or Tenure impact churn.
+- Satisfaction trends among Churned vs. Active Customers.
+- Which Devices or Data Plans have the highest churn.
+- How much Revenue is lost to churn.
 
-> ✅ Includes Jupyter notebooks, SQL queries, visualizations, and a Power BI dashboard.
+> ✅ Includes Jupyter notebooks, SQL queries, visualizations, and a Power BI dashboard (WIP).
 
 ---
 
