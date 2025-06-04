@@ -639,3 +639,56 @@ ORDER BY	revenue_lost DESC;
   - **450GB 3-Month Plan**: `₦4.4M` from 6 users
   - **200GB Monthly Broadband Plan**: `₦4.1M` from 14 users
 - These premium plans have fewer users but high price points, meaning each churned customer has a larger financial impact.
+
+## Business Recommendations to Reduce Customer Churn:
+
+### 1. Target Pricing-Sensitive Segments
+- **Findings**: High churn was observed among users of smaller data plans (e.g., **200GB Monthly, 3.2GB 2-Day Plan**).
+- **Action**:
+  - Re-evaluate pricing for low-to-mid-tier plans.
+  - Offer better value bundles or loyalty discounts.
+  - Introduce personalized data plans based on usage patterns.
+
+### 2. Prioritize Retention of High-Value Customers
+- **Findings**: Premium Broadband users (e.g., **1.5TB Yearly**) cause significant revenue loss despite low churn numbers.
+- **Actions**:
+  - Implement a dedicated VIP customer retention program.
+  - Offer exclusive support or perks to premium plan subscribers.
+  - Set up alerts for high-value users nearing churn thresholds.
+
+### 3. Address State-Specific Churn Hotspots
+- **Findings**: States like **Adamawa** have churn rates exceeding 60%.
+- **Actions**:
+  - Conduct deeper surveys in high-churn states to identify localized issues.
+  - Improve network reliability or expand customer service access in these regions.
+  - Launch targeted promotions in regions with high churn
+
+### 4. Rethink Customer Satisfaction Metrics
+- **Findings**: Customers who churned often gave positive satisfaction scores or reviews.
+- **Actions**:
+  - Supplement surveys with **behavioral analytics** (e.g., usage drops, missed payments).
+  - Identify churn risk factors beyond self-reported satisfaction, such as **tenure drop-offs** or price frustration.
+
+### 5. Improve First-Year Customer Onboarding
+- **Findings**: New Customers (0-6 months) had the lowest churn rate, but churn rises significantly after.
+- **Actions**:
+  - Create onboarding journeys that extend into the first year, not just the first month.
+  - Provide proactive engagement at key milestones (3 months, 6 months).
+
+###. 6 Engage the 30-44 and 20-29 Age Segments More Actively
+- **Findings**: These two age groups represent the highest churn, possibly due to digital literacy and comparison behavior.
+- **Action**:
+  - Tailor campaigns using social media, influencer marketing, or referral bonuses.
+  - Offer app-based loyalty rewards or gamified retention strategies.
+
+### 7. Focus on Device and Plan Experience
+- **Findings**: Churn is highest among Mobile SIM and short-term pan users.
+- **Actions**:
+  - Enhance user experience and perceived value of SIM-based plans.
+  - Encourage upgrades by showing long-term plan benefits via SMS/app notifications.
+
+### 8. Quantify Churn Impact for Stakeholders
+- **Findings**: MTN lost **₦58 million** (`~29%`) of revenue to churn in just one quarter.
+- **Actions**:
+  - Present churn cost analysis regularly to leadership.
+  - Use revenue risk to justify investment in retention initiatives.
