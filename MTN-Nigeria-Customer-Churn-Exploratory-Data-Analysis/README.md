@@ -199,6 +199,7 @@ FROM mtn_customer_churn;
 
 ![overall_churn_rate](plots/overall_customer_churn_rate.png)
 
+**Insights**:
 - About `29.16%` of MTN Nigeria's Customers in the Q1 of 2025 have churned. That's almost 3 out of every 10 customers, a **significant** number worth digging into
 
 ### 2. What are the top reasons for churn?
@@ -222,6 +223,7 @@ ORDER BY 	count DESC;
 
 ![top_reason_for_churn](plots/top_reasons_for_customer_churn.png)
 
+**Insights**:
 - Pricing and cost (`Tariffs`, `Data Plans`) are major churn drivers.
 - Network quality and customer service issues also play a big role.
 - Competitor offers lure many customers away.
@@ -266,6 +268,7 @@ LIMIT	10;
 
 ![top_states](plots/top_nigerian_states_with_highest_churn_rates_new.png)
 
+**Insights**:
 - Some states have churn rates well above the overall `29.16%` churn rate.
 - **Adamawa's** churn rate is particularly high at over `61%`, which could indicate major service or competition issues in the area.
 - **Abuja (FCT)**, the capital, has a churn rate below some of these states but still above average.
@@ -299,6 +302,7 @@ ORDER BY	churn_rate_percent DESC;
 
 ![age_group](plots/churn_rate_by_age_group.png)
 
+**Insights**:
 - **Adults (30-44) and Young Adults (20-29)** churn the most, over 1 in 3 in these groups have left. These may be price-sensitive or digital-savvy customers who actively compare providers.
 - **Seniors and Mid-Age** customers show more loyalty (lower churn). Possibly less likely to switch due to digital barriers or brand familiarity.
 - **Teen** churn is the lowest but sample size is very small (`26`), so conclusions here should be cautious.
@@ -322,6 +326,7 @@ ORDER BY	churn_rate_percent;
 
 ![gender](plots/churn_rate_by_gender.png)
 
+**Insights**:
 - The churn rate is slightly higher among female customers (`30.3%`) compared to male customers (`27.97%`).
 - The difference is relatively small (`~2.3%`), so gender may not be a **STRONG STANDALONE** driver of churn, but it could interact with other factors (satisfaction rate or tenure).
 
@@ -353,6 +358,7 @@ ORDER BY	churn_rate_percent DESC;
 
 ![tenure](plots/churn_rate_by_tenure_group.png)
 
+**Insights**:
 - Highest churn is seen in **Long Term** (`32.11%`), **Short-Term** (`32%`), and **Very Long-Term** (`31.92%`) customers. This suggests that both new adopters and old loyal users are churning, which could indicate different churn motivations.
 - **New Customers (0-6 months)** churn the least (`19.23%`), suggesting they are likely still exploring or haven't yet encountered issues that lead to churn.
 - **Mid-Term Users (13-24 months)** also show relatively low churn (`23%`), these might be more satisfied or locked in with some value proposition.
@@ -396,6 +402,7 @@ GROUP BY	1;
 
 ![average_satisfaction](plots/avg_satisfaction_score_by_churn_status.png)
 
+**Insights**:
 - Surprisingly, customers who churned actually had a slightly higher average satisfaction score (`3.05`) than those who stayed (`2.91`).
 - This contradicts the typical expectation that lower satisfaction directly leads to higher churn.
 - It suggests that other factors, such as pricing, competition, or tenure, may be stronger churn drivers than satisfaction alone.
@@ -426,6 +433,7 @@ ORDER BY	1, 2;
 
 ![customer_reviews](plots/churn_reviews_vs_churn_status.png)
 
+**Insights**:
 - Positive reviews don't guarantee loyalty:
   	- 118 Churners rated MTN as **Excellent or Very Good**.
   	- These represent `~41%` of all churners, which is significant.
@@ -457,6 +465,7 @@ ORDER BY	churn_rate_percent DESC;
 
 ![churn_mtn_device](plots/churn_rate_by_MTN_device.png)
 
+**Insights**:
 - **Mobile SIM Card** users have the highest churn rate (`31.23%`), slightly above the **4G Router Users** (`30.09%`).
 - **Advanced Devices (5G Broadband Router and Broadband MiFi)** have lower churn rates (`~27%`), suggesting better satisfaction or possibly more premium users.
 - **Mobile SIM Churn** may be driven by:
@@ -505,6 +514,7 @@ ORDER BY 	churn_rate_percent DESC;
 
 ![churn_per_subscription](plots/churn_rate_by_subscription_plan.png)
 
+**Insights**:
 - The **200GB Monthly Plan and 3.2GB 2-Day Plan**) have the highest churn rates, over `40%`.
 - Smaller or mid-sized monthly plans like **65GB, 25GB and 20GB** also show above-average churn.
 - Large, long-term Broadband Plans like **1.5TB Yearly Plan, 120GB Monthly and 150GB FUP Unlimited** have the lowest churn rates (under `25%`).
@@ -555,6 +565,7 @@ FROM	revenue_stats;
 
 ![rev_distribution](plots/revenue_distribution_lost_to_churn_vs_retained.png)
 
+**Insights**:
 - Key Metrics:
   - **Total Revenue (All Customers)**: `199,348,200`
   - **Revenue lost to Churned Customers**: `58,000,200`
@@ -632,6 +643,7 @@ ORDER BY	revenue_lost DESC;
 
 ![rev_lost_sub_plan](plots/revenue_lost_to_churn_by_subscription_plan.png)
 
+**Insights**:
 - The **1.5TB Yearly Broadband Plan**, despite only 7 churned customers, caused the highest revenue loss of ``₦15.3`` million, a direct result of its premium pricing (`₦150,000` per user)
 - Other high-value plans with significant losses:
   - **165GB Monthly Plan**: `₦7.6M` lost from 21 churned users
