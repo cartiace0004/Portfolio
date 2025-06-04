@@ -675,7 +675,7 @@ ORDER BY	revenue_lost DESC;
   - Create onboarding journeys that extend into the first year, not just the first month.
   - Provide proactive engagement at key milestones (3 months, 6 months).
 
-###. 6 Engage the 30-44 and 20-29 Age Segments More Actively
+### 6. Engage the 30-44 and 20-29 Age Segments More Actively
 - **Findings**: These two age groups represent the highest churn, possibly due to digital literacy and comparison behavior.
 - **Action**:
   - Tailor campaigns using social media, influencer marketing, or referral bonuses.
