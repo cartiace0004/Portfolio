@@ -20,7 +20,7 @@ Despite not finishing my college degree due to financial limitations, I've compl
 
 ## 📁 Featured Projects
 
-### 🔹 [E-Commerce Order & Supply Chain Exploratory Data Analysis](https://github.com/cartiace0004/Portfolio/tree/main/E-Commerce-Order-Supply-Chain-Analysis)
+### 🔹 [MTN Nigeria Customer Churn Exploratory Data Analysis](https://github.com/cartiace0004/Portfolio/blob/main/MTN-Nigeria-Customer-Churn-Exploratory-Data-Analysis/README.md)
 **Tools:** SQL, Pandas, Matplotlib, Seaborn  
 Uncovered key business insights on:
 - Sales performance by category, product, and region  
