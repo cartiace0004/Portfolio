@@ -277,8 +277,8 @@ LIMIT 10;
 
 **Insights**:
 - From the revised query, we observe that:
-  - Adamawa has the highest churn rate at 63.64%, meaning nearly 2 out of 3 customers in that state have left.
-  - Imo and Kebbi follow closely with 56.25% and 50% churn rates, respectively.
+  - **Adamawa** has the highest churn rate at `63.64%`, meaning nearly 2 out of 3 customers in that state have left.
+  - **Imo and Kebbi** follow closely with `56.25%` and `50%` churn rates, respectively.
   - The average churn rate among these top 10 states ranges roughly between 36% to 64%, which is significantly higher than the national churn rate of 29.44% (from your earlier query). 
 
 ### 4. How do Age groups, Gender, or Tenure impact churn?
