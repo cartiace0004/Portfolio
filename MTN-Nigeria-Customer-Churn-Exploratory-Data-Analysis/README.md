@@ -417,7 +417,7 @@ ORDER BY satisfaction_rate;
 |                   4 |              109 |               21.98 |
 |                   5 |               86 |               17.34 |
 
-![df_satrate](plots/satisfaction_rate_distribution_by_churn_status_new2.png)
+![df_satrate](plots/satisfaction_rate_distribution_by_churn_status2.png)
 
 #### Average Satisfaction by Churn Status:
 
