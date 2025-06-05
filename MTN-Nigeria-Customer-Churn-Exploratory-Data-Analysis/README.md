@@ -28,7 +28,7 @@
 ## The Dataset
 - The dataset was taken from [Kaggle](https://www.kaggle.com/datasets/oluwademiladeadeniyi/mtn-nigeria-customer-churn?resource=download). The dataset simulates the behaviour, preferences and churn patterns of MTN Nigeria customers in Q1 2025. It provides rich insight into device usage, data plan preferences, age, groups, tenure, churn drivers, and revenue patterns. The dataset contains 974 rows and possess the following columns:
 
-  - Customer ID: A unique identifier assigned to each customer. It may appear more than once if the customer owns multiple devices.
+  - Customer ID: A unique identifier assigned to each customer. **It may appear more than once if the customer owns multiple devices**.
   - Full Name: The full name of the customer. Names reflect a balance across Nigerian ethnicities and regions.
   - Date of Purchase: Month and year the device or plan was purchased. All entries are from 2025.
   - Age: Age of the customer (between 16 and 80). Rules apply to age and purchasing behaviour.
